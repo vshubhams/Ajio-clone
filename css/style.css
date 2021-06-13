@@ -14,6 +14,7 @@
     position: fixed;
     z-index: 101;
 }
+
 header{
     width: 1200px;
     transition: all .2s ease-in-out;
@@ -375,39 +376,38 @@ input[name="r"]{
 
 /* slider end ----------------*/
 
-
 /* -------------Experience Ajio section Start--------- */
 
 /* for the strip images */
 .stripe{
     overflow: hidden;
     /* margin-top: 5px; */
-    }
+}
     .stripe>img{
-    width: 1263px;
+        width: 1263px;
     }
     .stripe>img:hover{
-    transform: scale(1.025);
-    transition: 1.5s;
+        transform: scale(1.025);
+        transition: 1.5s;
     }
     .card-container{
-    display: flex;
+        display: flex;
     }
     /* for all portrait box */
     .box{
-    overflow: hidden;
-    margin-right: 2px;
+        overflow: hidden;
+        margin-right: 2px;
     }
     .box>img{
-    width: 314.25px;
+        width: 314.25px;
     }
     .box>img:hover{
-    transform: scale(1.025);
-    transition: 1.5s;
+        transform: scale(1.025);
+        transition: 1.5s;
     }
     .space11{
-    height: 11px;
-    background-color: #EAEAEA;
+        height: 11px;
+        background-color: #EAEAEA;
     }
     /* ------------ */
     .landscpBox{
@@ -418,33 +418,33 @@ input[name="r"]{
         width: 421px;
     }
     .landscpBox>img:hover{
-    transform: scale(1.025);
-    transition: 1.5s;
+        transform: scale(1.025);
+        transition: 1.5s;
     }
     
-/* second slider start */
-
-input[name="p"]{
-    position: absolute;
-    visibility: hidden;
-}    
-#p1:checked ~ .s1{
-margin-left: 0;
+    /* second slider start */
+    
+    input[name="p"]{
+        position: absolute;
+        visibility: hidden;
+    }    
+    #p1:checked ~ .s1{
+        margin-left: 0;
 }
 
 #p2:checked ~ .s1{
-  margin-left: -20%;
+    margin-left: -20%;
 }
 #p3:checked ~ .s1{
-  margin-left: -40%;
+    margin-left: -40%;
 }
 #p4:checked ~ .s1{
-  margin-left: -60%;
+    margin-left: -60%;
 }
 #p5:checked ~ .s1{
-  margin-left: -80%;
+    margin-left: -80%;
 }
-    /* second slider end */
+/* second slider end */
 /* third slider start */
 
 input[name="q"]{
@@ -452,22 +452,22 @@ input[name="q"]{
     visibility: hidden;
 }    
 #q1:checked ~ .s1{
-margin-left: 0;
+    margin-left: 0;
 }
 
 #q2:checked ~ .s1{
-  margin-left: -20%;
+    margin-left: -20%;
 }
 #q3:checked ~ .s1{
-  margin-left: -40%;
+    margin-left: -40%;
 }
 #q4:checked ~ .s1{
-  margin-left: -60%;
+    margin-left: -60%;
 }
 #q5:checked ~ .s1{
-  margin-left: -80%;
+    margin-left: -80%;
 }
-    /* third slider end */
+/* third slider end */
 /* fourth slider start */
 
 input[name="s"]{
@@ -475,19 +475,115 @@ input[name="s"]{
     visibility: hidden;
 }    
 #s1:checked ~ .s1{
-margin-left: 0;
+    margin-left: 0;
 }
 
 #s2:checked ~ .s1{
-  margin-left: -20%;
+    margin-left: -20%;
 }
 #s3:checked ~ .s1{
-  margin-left: -40%;
+    margin-left: -40%;
 }
 #s4:checked ~ .s1{
-  margin-left: -60%;
+    margin-left: -60%;
 }
 #s5:checked ~ .s1{
-  margin-left: -80%;
+    margin-left: -80%;
 }
-    /*fourth slider end */
+/*fourth slider end */
+
+
+/*---------Footer start-------------  */
+footer {
+    background-color: #2C4152;
+    position: relative;
+    top: 90px;
+    width: 1263px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.menu_item {
+    display: flex;
+    flex-direction: row;
+    color: #CCCCCC;
+    border-bottom: 1px solid #ccc;
+    padding: 40px 0;
+    margin-bottom: 40px;
+    width: 1200px;
+    margin: auto;
+}
+
+.item_list {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.ftr_items {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.ftr_items > a {
+    text-decoration: none;
+    color: #bfc8cb;
+    margin-bottom: 8px;
+    font-size: 12px;
+    
+}
+.ftr_items>a:hover{
+    text-decoration: underline;
+}
+
+#payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+    width: 1200px;
+    margin: auto;
+}
+
+.pay_img {
+    width: 70px;
+    margin: 15px;
+}
+
+.pay_img > a > img {
+    width: 100%;
+}
+
+.pay_logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.pay_title {
+    font-size: 16px;
+    color: #ccc
+}
+
+/*---------Footer End-------------  */
+@media only screen and (max-width: 1199px) {
+    .header-container{
+        position: static;
+    }
+    .main-container{
+        position: static;
+    }
+    .navigation{
+        position: static;
+    }
+    .bar{
+        position: static;
+    }
+    footer{
+        position: static;
+    }
+}
