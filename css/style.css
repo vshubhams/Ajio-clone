@@ -3,7 +3,7 @@
     padding:0;
 }
 .header-container{
-    width: 100%;
+    width: 1264px;
     height: 86px;
     flex-direction: row;
     border-top: solid 3px #2c4152;
@@ -179,10 +179,7 @@ input{
 .nav-icon-box>a>img{
     width: 34px;
 }
-.banner-Box{
-    position: relative;
-    top: 90px;
-}
+
 
 /* hover menu- visible when hover on nav list items */
 .hover-menu-container{
@@ -294,4 +291,203 @@ width: 300px;
     visibility: hidden;
 }
 
+/* --------------------------Main Container That's contain all item below header----------------- */
+.main-container{
+    position: relative;
+    width: 1263px;
+    top: 90px;
+}
 
+/* slider start -------------------*/
+.slidershow{
+  /* position: relative; */
+  /* top: 90px; */
+  /* width: 1263px; */
+  overflow: hidden;
+}
+/* .middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+} */
+.middle{
+  margin: auto;
+}
+.navigation{
+  position: relative;
+  bottom: 8px;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  display: flex;
+  margin: auto;
+  width: fit-content;
+
+}
+.bar{
+  width: 50px;
+  height: 5px;
+  position: relative;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+/* slider end ----------------*/
+
+
+/* -------------Experience Ajio section Start--------- */
+
+/* for the strip images */
+.stripe{
+    overflow: hidden;
+    /* margin-top: 5px; */
+    }
+    .stripe>img{
+    width: 1263px;
+    }
+    .stripe>img:hover{
+    transform: scale(1.025);
+    transition: 1.5s;
+    }
+    .card-container{
+    display: flex;
+    }
+    /* for all portrait box */
+    .box{
+    overflow: hidden;
+    margin-right: 2px;
+    }
+    .box>img{
+    width: 314.25px;
+    }
+    .box>img:hover{
+    transform: scale(1.025);
+    transition: 1.5s;
+    }
+    .space11{
+    height: 11px;
+    background-color: #EAEAEA;
+    }
+    /* ------------ */
+    .landscpBox{
+        overflow: hidden;
+        margin-right: 2px;
+    }
+    .landscpBox>img{
+        width: 421px;
+    }
+    .landscpBox>img:hover{
+    transform: scale(1.025);
+    transition: 1.5s;
+    }
+    
+/* second slider start */
+
+input[name="p"]{
+    position: absolute;
+    visibility: hidden;
+}    
+#p1:checked ~ .s1{
+margin-left: 0;
+}
+
+#p2:checked ~ .s1{
+  margin-left: -20%;
+}
+#p3:checked ~ .s1{
+  margin-left: -40%;
+}
+#p4:checked ~ .s1{
+  margin-left: -60%;
+}
+#p5:checked ~ .s1{
+  margin-left: -80%;
+}
+    /* second slider end */
+/* third slider start */
+
+input[name="q"]{
+    position: absolute;
+    visibility: hidden;
+}    
+#q1:checked ~ .s1{
+margin-left: 0;
+}
+
+#q2:checked ~ .s1{
+  margin-left: -20%;
+}
+#q3:checked ~ .s1{
+  margin-left: -40%;
+}
+#q4:checked ~ .s1{
+  margin-left: -60%;
+}
+#q5:checked ~ .s1{
+  margin-left: -80%;
+}
+    /* third slider end */
+/* fourth slider start */
+
+input[name="s"]{
+    position: absolute;
+    visibility: hidden;
+}    
+#s1:checked ~ .s1{
+margin-left: 0;
+}
+
+#s2:checked ~ .s1{
+  margin-left: -20%;
+}
+#s3:checked ~ .s1{
+  margin-left: -40%;
+}
+#s4:checked ~ .s1{
+  margin-left: -60%;
+}
+#s5:checked ~ .s1{
+  margin-left: -80%;
+}
+    /*fourth slider end */
