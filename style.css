@@ -97,13 +97,14 @@ text-decoration: underline;
     letter-spacing: .05em;
     transition: all .2s ease-in-out;
     height: 35px;
-    transition-delay: .4s;
-    -webkit-transition-delay: .4s;
     vertical-align: top;
 }
-.left-nav>ul>li:hover{
+
+.left-nav>ul>li>a:hover{
     font-weight: 900;
-    border-bottom: solid 4px #2c4152;
+    transition: all .2s ease-in-out;
+    transition-delay: 0.3s;
+    border-bottom: solid 4px #2C4152;
 }
 .left-nav>ul>li>a{
     height: 35px;
@@ -135,6 +136,25 @@ text-decoration: underline;
     height: 32px;
     font-size: 14px;
 }
+.search-bar>button{
+     position: absolute;
+     top: .5px;
+     right: -25px;
+     background: none;
+     border: none;
+     padding: 0;
+     height: 33px;
+     min-width: 35px;
+     border-radius: 50%;
+}
+.search-bar>button:hover{
+    background-color: #EAE9D8;
+}
+.search-bar>button>img{
+    height: 15px;
+    margin-top: 4px;
+}
+
 
 /* .right-nav>div>input{
     width: 63%;
@@ -158,6 +178,120 @@ input{
 }
 .nav-icon-box>a>img{
     width: 34px;
+}
+.banner-Box{
+    position: relative;
+    top: 90px;
+}
+
+/* hover menu- visible when hover on nav list items */
+.hover-menu-container{
+    /* visibility: visible; */
+    visibility: hidden;
+    opacity: 0;
+    /* transition: .02s;
+    transition-property: visibility, opacity,linear;
+    transition-duration: 0.2s;
+    transition-timing-function: ease, linear;
+    transition-delay: 0.2s; */
+    transition-property: visibility, opacity;
+    transition-duration: 0.2s, 0.2s;
+    transition-timing-function: ease-in-out, linear;
+    transition-delay: 0s, 0.3s;
+
+}
+
+.hover-menu-container>div{
+    background-color: #fff;
+    position: absolute;
+    top: 87px;
+    left: 0;
+    width: 1160px;
+    height: 48px;
+    padding: 0 20px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    border-bottom: 1px solid #f0eded;
+}
+.hover-menu-container>div>div:first-child{
+padding-right: 20px;
+color: #ccc;
+}
+
+/* .hover-menu-container>div>div:not(:first-child){
+    background-color: #F1F3F4;
+    height: 48px;
+    border-right: 3px solid #fff;
+    display: flex;
+    align-items: center;
+} */
+.cat-dropdown,.brands-dropdown{
+    background-color: #f8f8f8;;
+    height: 48px;
+    border-right: 3px solid #fff;
+    display: flex;
+    align-items: center;
+    /* transition: all .3s ease-in-out; */
+}
+.cat-dropdown:hover,.brands-dropdown:hover{
+    background-color: #EAEAEA;
+    font-weight: 900;
+    
+}
+.hover-menu-container>div>div>a{
+    color: #2c4152;
+    display: inline-block;
+    line-height: 48px;
+    padding: 0 10px;
+}
+.hover-menu-container>ul li a{
+    line-height: 48px;
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+/* catergories drop down  */
+.content-box{
+display: flex;
+width: 1160px;
+padding: 0 20px;
+height: 500px;
+position: absolute;
+background-color: #fff;
+top: 49px;
+left: 0;
+}
+
+.content-box>div{
+width: 300px;
+}
+.content-box>div>ul{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 13px 0;
+    font-size: 14px;
+}
+.content-box>div>ul>a{
+    color: #333333;
+}
+.content-box>div>ul>li:first-child{
+    margin-top: 5px;
+}
+.content-box>div>ul>li{
+    font-weight: 500;
+    color: #2c4152;
+    text-transform: none;
+}
+.content-box>div>ul>li>a:hover{
+    text-decoration: underline;
+}
+.content-box>div>ul>a:hover{
+    color: #2c4152;
+}
+/* class of brands of menu items, contains all the items in brands*/
+.brand-content{
+    visibility: hidden;
 }
 
 
