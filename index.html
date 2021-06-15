@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/cc257a2e41.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/cc257a2e41.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="css/style.css">
     <title>Ajio.com | Shop Online the Latest Fashion in apparels brands in India | Reliance Ajio.com</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -20,7 +19,13 @@
             <div class="signin-customer-care">
                 <ul>
                     <li>
-                        <p>Sign In / Join AJIO</p>
+                        <a href="#" id="username"></a>
+                     </li>
+                    <li onclick="showBox()">
+                        <p id="signin" >Sign In / Join AJIO</p>
+                     </li>
+                    <li onclick="signOut()">
+                        <p id="signout" >Sign Out</p>
                      </li>
                     <li>
                         <a href="#">Customer Care</a>
@@ -38,7 +43,7 @@
                     <ul>
                         <!-- Men Category -->
                         <li onmouseover="showMenu('menItems') " onmouseout="hideMenu('menItems')">
-                            <a href="#">MEN</a>
+                            <a href="men.html">MEN</a>
                             <div class="hover-menu-container" id="menItems">
                                 <div>
                                     <div>
@@ -663,7 +668,7 @@
                             <img src="images/loupe.png" alt="">
                         </button>
                     </div>
-                    <div class="nav-icon-box nav-icon-box2">
+                    <div onclick="showBox()" class="nav-icon-box nav-icon-box2">
                         <a href="#">
                             <img src="images/clothes-hanger.svg" alt="">
                         </a>
@@ -677,6 +682,48 @@
             </div>
         </header>
     </div>
+
+    <!--------------SignIn box start ---------->
+    <div class="sign-in-container">
+        <div class="sign-in-box">
+        
+            <div onclick="hideBox()" class="close" >X</div>
+    
+    
+            <h2 class="box-heading top">Welocome to AJIO</h2>
+            <h3 class="box-heading join">Join/Sign In using</h3>
+            <div class="link-box">
+                <div class="fb"><img src="images/signInBox/fb.jpg" alt=""> Fackbook</div>
+                <div class="google"><img src="images/signInBox/google.jpg" alt=""> Google</div>
+            </div>
+            <div class="or">Or</div>
+            <div class="line left"></div>
+            <div class="line right"></div>
+            <h3 class="box-heading small" id="inputHeading">Enter Mobile Number*</h3>
+            
+            <p id="warning"></p>
+            <input type="text" id="number"><br>
+            <div class="hide input-container" id="inputCont" >
+                <div class="radioBox" id="radioBox">Gender:
+                    <label>
+                        <input type="radio" name="radio-button" value="no"/>
+                        <span>Female</span>
+                      </label>
+                    
+                      <label>
+                        <input type="radio" name="radio-button" value="no" />
+                        <span>Male</span>
+                      </label>
+                </div>
+                <input type="text" id="name" placeholder="Name"><br>
+                <input type="text" id="email" placeholder="Email"><br>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <button onclick="goToSignUP()" class="continue" id="continueBtn">CONTINUE</button>
+            <h3 class="box-heading lite">By Signing in, I agree to <span class="blue-span">Term and Conditions.</span></h3>
+        </div>
+        </div>
+    <!--------------SignIn box end ------------>
     
     
     <div class="main-container">   
@@ -692,10 +739,10 @@
                 <input type="radio" name="r" id="r5">
         
                 <div class="slide s1">
-                    <img src="images/slider/topcarousel-bottomwear-30to60.jpg" alt="">
+                    <img src="images/slider/teestops-min50extra30.webp" alt="">
                 </div>
                 <div class="slide">
-                    <img src="images/slider/teestops-min50extra30.webp" alt="">
+                    <img src="images/slider/topcarousel-bottomwear-30to60.jpg" alt="">
                 </div>
                 <div class="slide">
                     <img src="images/slider/topcarousel-brands-40to70.webp" alt="">
@@ -728,7 +775,7 @@
         </div>
         <!--Image slider end -->
 
-    <div class="space11"></div>
+    <div class="space-white"></div>
     <div class="stripe"><img src="https://assets.ajio.com/medias/sys_master/images/images/hd9/h0e/32814549172254/09062021-d-unisex-topcarousel-superstyledays-60to90.jpg" alt=""></div>
 
     <!------------------ Experience Ajio section Start----------->
@@ -793,7 +840,7 @@
     </div>
     <!---------- Second image slider End ------------->
 
-    <div class="space11"></div>
+    <div class="space-white"></div>
     <div class="stripe"><img src="images/stripe/banner1-sectionheader.webp" alt=""></div>
     <div class="stripe"><img src="images/slider/flashdeals-summeressentials-bogo.webp" alt=""></div>
     <div class="space11" style="height: 3px;"></div>
@@ -851,7 +898,7 @@
         </div>
     </div>
     <!---------- third image slider End ------------->
-    <div class="space11"></div>
+    <div class="space-white"></div>
     <div class="exp-header stripe"><img class="stripe" src="https://assets.ajio.com/medias/sys_master/images/images/h8c/h50/32236053102622/06052021-d-unisex-onlinestores-sectionheader.jpg" alt=""></div>
     <div class="card-container">
         <div class="box"><img src="https://assets.ajio.com/medias/sys_master/images/images/h4a/h24/32236054151198/06052021-d-unisex-onlinestores-trends.jpg" alt=""></div>
@@ -932,7 +979,7 @@
     </div>
     <!---------- fourth image slider End ------------->
 
-    <div class="space11"></div>
+    <div class="space-white"></div>
     <div class="stripe"><img src="https://assets.ajio.com/medias/sys_master/images/images/he9/h03/32236068831262/07052021-d-unisex-brands-exploremore-sectionheader.jpg" alt=""></div>
     
     <div class="card-container">
@@ -955,7 +1002,7 @@
     </div>
     
     <div class="stripe"><img src="https://assets.ajio.com/medias/sys_master/images/images/h12/hda/27958749790238/13102020-D-unisex-ajiocares-strip.jpg" alt=""></div>
-    <div><img style="width:1263px;" src="images/stripe/above-footer.png" alt=""></div>
+    <div><img style="min-width:1263px; width: 100%;" src="images/stripe/above-footer.png" alt=""></div>
 </div>
 
 
@@ -1041,8 +1088,7 @@
             </div>
             <div class="pay_img">
                 <a href="">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV4SQxDaJwKocAqQvhysEPZfODrrQJCL1hCu-0YeiZoPbH73-skzePIuJjVtugGCHdEg&usqp=CAU"
-                        alt="">
+                    <img class="ssl-img" src="images/footer/ssl.png"alt="">
                 </a>
             </div>
         </div>
@@ -1051,5 +1097,5 @@
 <!--------------------- Footer end ------------------->
 
 </body>
-<script src="js/main.js"></script>
+<script src="main.js"></script>
 </html>
