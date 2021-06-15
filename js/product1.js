@@ -73,22 +73,34 @@ function open1() {
 
 //Product object ----------->
 
-let product = {
-    image1: "images/procuct_1_images/slider_image1",
-    image2: "images/procuct_1_images/slider_image2",
-    image3: "images/procuct_1_images/slider_image3",
-    image4: "images/procuct_1_images/slider_image4",
-    image5: "images/procuct_1_images/slider_image5",
-    name: "RAY BAN",
-    detail: "0RB3671186/3160 UV-Protected Full-Rim Shield Sunglasses",
-    price: "Rs. 950",
-    price1: 950
-};
+// let product = {
+//     image1: "images/procuct_1_images/slider_image1",
+//     image2: "images/procuct_1_images/slider_image2",
+//     image3: "images/procuct_1_images/slider_image3",
+//     image4: "images/procuct_1_images/slider_image4",
+//     image5: "images/procuct_1_images/slider_image5",
+//     name: "RAY BAN",
+//     detail: "0RB3671186/3160 UV-Protected Full-Rim Shield Sunglasses",
+//     price: "Rs. 950",
+//     price1: 950
+// };
 
-localStorage.setItem('current-product', JSON.stringify(product));
+// localStorage.setItem('current-product', JSON.stringify(product));
+
+
+
+// console.log(data);
 
 function show_item() {
-    let data = JSON.parse(localStorage.getItem('current-product'));
+    // let data = JSON.parse(localStorage.getItem('current-product'));
+
+    let product = JSON.parse(localStorage.getItem('products'));
+
+    let data = product[product.length - 1];
+    
+    let add_to_bag = document.getElementsByClassName('add_to_bag');
+    add_to_bag[0].setAttribute('id', `p${product.length - 1}`);
+
 
     let img1 = document.getElementById('1');
     let img2 = document.getElementById('2');
@@ -102,17 +114,17 @@ function show_item() {
     let detail = document.getElementsByClassName('detail');
     let price = document.getElementsByClassName('price1');
 
-    img1.innerHTML = `<img src="${data.image1}" />`
-    img2.innerHTML = `<img src="${data.image2}" />`
-    img3.innerHTML = `<img src="${data.image3}" />`
-    img4.innerHTML = `<img src="${data.image4}" />`
-    img5.innerHTML = `<img src="${data.image5}" />`
+    img1.innerHTML = `<img src="${data.poster}" />`
+    img2.innerHTML = `<img src="${data.poster2}" />`
+    img3.innerHTML = `<img src="${data.poster3}" />`
+    img4.innerHTML = `<img src="${data.poster4}" />`
+    img5.innerHTML = `<img src="${data.poster5}" />`
 
-    main_img[0].innerHTML = `<img src="${data.image1}" />`
+    main_img[0].innerHTML = `<img src="${data.poster}" />`
 
-    name[0].innerHTML = `${data.name}`;
-    detail[0].innerHTML = `${data.detail}`
-    price[0].innerHTML = `${data.price}`
+    name[0].innerHTML = `${data.company_name}`;
+    detail[0].innerHTML = `${data.description}`
+    price[0].innerHTML = `Rs. ${data.price}`
 }
 
 show_item();
@@ -123,18 +135,25 @@ if (localStorage.getItem('cart-items') == undefined) {
     localStorage.setItem('cart-items', JSON.stringify(cart_items));
 }
 
-function add_to_cart() {
+function add_to_cart(id) {
+    let newInput = id.split("");
+    let index = Number(newInput[1]);
+
     let go_to_cart = document.getElementById('go_to_bag');
     let add_to_cart = document.getElementsByClassName('add_to_bag');
 
-    let data = JSON.parse(localStorage.getItem('current-product'));
+    
+
+    let data = JSON.parse(localStorage.getItem('products'));
 
     let cart = JSON.parse(localStorage.getItem('cart-items'));
 
-    let isPresent = false;
+    // let isPresent = false;
 
     
-    cart.push(data);
+    cart.push(data[index]);
+
+    // console.log(index);
     
     localStorage.setItem('cart-items', JSON.stringify(cart));
 

@@ -613,6 +613,7 @@ input {
 .size {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .sz {
@@ -628,6 +629,10 @@ input {
 .sz > p {
   position: relative;
   top: 10%;
+}
+
+#select_size {
+  margin-top: 20px;
 }
 
 .pincode_msg {
