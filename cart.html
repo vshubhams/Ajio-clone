@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Bag | AJIO</title>
+
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<header id="myHeader">
+    <div id="cart-header">
+        <img src="images/cart_images/Ajio-Logo.svg">
+        <div id="signin-signup"><span id="sign-in-header" onclick="open1()">Sign In / Join
+                Ajio</span><span>&nbsp&nbsp&nbsp&nbsp</span>
+            <span id="customer-care"> Customer
+                care</span>
+        </div>
+    </div>
+</header>
+
+<body>
+
+    <!-- Quantity popup starts -->
+
+    <div class="quantity-container">
+        <div class="quantity-box">
+            <div class="sel-size">Select Size</div>
+
+            <div class="size">
+                <div class="sz" id="s">
+                    <p>S</p>
+                </div>
+                <div class="sz" id="m">
+                    <p>M</p>
+                </div>
+                <div class="sz" id="l">
+                    <p>L</p>
+                </div>
+                <div class="sz" id="xl">
+                    <p>XL</p>
+                </div>
+            </div>
+
+
+            <div class="sel-quat">Select Quantity</div>
+            <div class="quantity-change">
+                <div id="minus" onclick="decrease_quantity()">-</div>
+                <div class="size">
+                    <div class="sz qant">
+                        <p>1</p>
+                    </div>
+                </div>
+                <div id="add" onclick="increase_quantity()">+</div>
+            </div>
+
+            <div class="update-quantity" onclick="update_and_close(this.id)">UPDATE</div>
+        </div>
+    </div>
+
+    <!-- Quantity popup ends -->
+
+
+    <div id="sign-in">
+        <div class="back-close">
+            <div id="back">&#60 Back</div>
+            <div id="close" onclick="close1()">&#10005</div>
+        </div>
+        <div class="heading">Welcome to AJIO</div>
+        <div class="join">Join/Sign In using</div>
+        <div class="fb-google">
+            <div class="fb">
+                <img src="images/facebook.png" alt="">
+                <div>FACEBOOK</div>
+            </div>
+
+            <div class="g">
+                <img src="images/g-search.png" alt="">
+                <div>GOOGLE</div>
+            </div>
+        </div>
+
+        <div class="or">Or</div>
+
+        <div class="mobile-number">Enter Mobile Number / Email*</div>
+
+        <div class="input-mobile">
+            <input type="text">
+        </div>
+
+        <div class="submit-form">
+            <button>CONTINUE</button>
+        </div>
+
+        <div class="terms-sign-in">By Signing In, I agree to <span>Terms and Conditions.<span></div>
+    </div>
+
+    <div id="blank"></div>
+
+
+    <div id="ad">
+        <img src="images/cart_images/cart2.webp" alt="">
+    </div>
+
+    <div class="empty-cart">
+        <div class="empty-bag">Your Shopping Bag is Empty!</div>
+        <div class="continue-shop-button" onclick="continue_shopping()">CONTINUE SHOPPING</div>
+    </div>
+
+    <div id="cart-product">
+        <div class="column-1">
+            <div class="bag-count">
+                <div>My Bag <span id="item-count">(0 Item)</span></div>
+                <div class="add-closet">+ Add From Closet</div>
+            </div>
+            <div id="item-card">
+                <!-- <div class="product-show">
+                    <img src="images/procuct_1_images/rayban3" alt="">
+                    <a href="">Ray Ban - 0RB3671186/3160 UV-Protected Full-Rim Shield Sunglasses</a>
+                    <div class="product-size">Size <span>OS</span> &or;</div>
+                    <div class="cart-qty">Qty <span> 1</span> &or;</div>
+                    <div class="delete">Delete</div>
+                    <div class="amount">
+                        <div class="total-amount">Rs. 950</div>
+                        <div class="move">Move To Closet</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="add-more"></div>
+        </div>
+        <div class="column-2">
+            <div class="bill">
+                <div>Order Details</div>
+                <div class="bag-total bill-card">
+                    <div>Bag Total</div>
+                    <div id="bag-item-amount">Rs. 950</div>
+                </div>
+                <div class="bag-delivery bill-card">
+                    <div>Delivery</div>
+                    <div id="bag-delivery-amount">FREE</div>
+                </div>
+                <div class="bag-total bill-card">
+                    <div>Total Amount</div>
+                    <div id="bag-total-amount">Rs. 950</div>
+                </div>
+                <button id="proceed-to-ship" onclick="open1()">PROCEED TO SHIPPING</button>
+            </div>
+            <div id="coupon">
+                <div class="coupon-info">Apply Coupon</div>
+                <div class="coupon-input">
+                    <input type="text" placeholder="ENTER COUPON CODE" />
+                    <button class="apply-coupon">APPLY</button>
+                </div>
+
+                <div class="coupon-available">
+                    <div class="coupon-info">Applicable Coupons</div>
+                    <div class="coupon-show">
+                        <input type="radio" id="coupon1" name="coupon">
+                        <label for="coupon">
+                            <div class="coupon-saving">Savings <span>Rs.50</span></div>
+                            <div>LUCKY</div>
+                            <div>Get Flat 50 Off on bill value of 1190 and above.</div>
+                            <div class="link">View T & C</div>
+                        </label>
+                    </div>
+                    <div class="coupon-show">
+                        <input type="radio" id="coupon1" name="coupon">
+                        <label for="coupon">
+                            <div class="coupon-saving">Savings <span>Rs.50</span> </div>
+                            <div>FREESHIP</div>
+                            <div>Shipping on us for your first purchase</div>
+                            <div class="link">View T & C</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="bottom-bar-info">
+            <img src="images/cart_images/secure-payment.png" alt="">
+            <div>SECURE PAYMENTS</div>
+        </div>
+        <div class="bottom-bar-info">
+            <img src="images/cart_images/rupee.png" alt="">
+            <div>CASH ON DELIVERY</div>
+        </div>
+        <div class="bottom-bar-info">
+            <img src="images/cart_images/quality.png" alt="">
+            <div>ASSURED QUALITY</div>
+        </div>
+        <div class="bottom-bar-info">
+            <img src="images/cart_images/return.png" alt="">
+            <div>EASY RETURNS</div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+
+    <div id="service">
+        <div class="service_item">
+            <img src="images/procuct_1_images/easy_return.png" />
+            <div>EASY EXCHANGE*</div>
+        </div>
+        <div class="service_item">
+            <img src="images/procuct_1_images/heart.png" />
+            <div>100% HANDPICKED</div>
+        </div>
+        <div class="service_item">
+            <img src="images/procuct_1_images/quality.png" />
+            <div>ASSURED QUALITY</div>
+        </div>
+    </div>
+
+    <div id="ftr_menu">
+        <div class="menu_item">
+            <div class="item_list">
+                <div class="headline">Ajio</div>
+                <div class="ftr_items">
+                    <a href="">Who we are</a>
+                    <a href="">Join our team</a>
+                    <a href="">Terms & conditions</a>
+                    <a href="">We respect your privacy</a>
+                    <a href="">Fee & Payments</a>
+                    <a href="">Return & Refunds policy</a>
+                    <a href="">Promotions Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="headline">Help</div>
+                <div class="ftr_items">
+                    <a href="">Track your order</a>
+                    <a href="">Frequently Asked Questions</a>
+                    <a href="">Returns</a>
+                    <a href="">Cancellations</a>
+                    <a href="">Payments</a>
+                    <a href="">Customer Care</a>
+                    <a href="">How Do I Redeem My Coupon</a>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="headline">Shop By</div>
+                <div class="ftr_items">
+                    <a href="">Men</a>
+                    <a href="">Women</a>
+                    <a href="">Kids</a>
+                    <a href="">Indie</a>
+                    <a href="">Stores</a>
+                    <a href="">New Arrivals</a>
+                    <a href="">Bramd Directory</a>
+                    <a href="">Home</a>
+                    <a href="">Collections</a>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="headline">Follow Us</div>
+                <div class="ftr_items">
+                    <a href="">Facebook</a>
+                    <a href="">Instagram</a>
+                    <a href="">Terms & conditions</a>
+                    <a href="">Twitter</a>
+                    <a href="">Pinterest</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="payment">
+            <div id="payment_method">
+                <div class="pay_title">
+                    <h2>Payment Methods</h2>
+                </div>
+                <div class="pay_logo">
+                    <div class="pay_img">
+                        <a href=""><img src="images/procuct_1_images/net_banking.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/procuct_1_images/visa.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/procuct_1_images/master_card.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/procuct_1_images/cash_on_delivery.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/procuct_1_images/jio_money.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div id="secure_payment">
+                <div class="pay_title">
+                    <h2>Secure Systems</h2>
+                </div>
+                <div class="pay_img">
+                    <a href="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV4SQxDaJwKocAqQvhysEPZfODrrQJCL1hCu-0YeiZoPbH73-skzePIuJjVtugGCHdEg&usqp=CAU"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
+
+<script src="js/cart.js"></script>

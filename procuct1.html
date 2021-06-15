@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <title>Men's Product</title>
-    <link rel="stylesheet" href="css/product_page.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/main.js">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/cc257a2e41.js" crossorigin="anonymous"></script>
+    <title>Mens Collection</title>
+    <link rel="stylesheet" href="css/product1.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+
+    <div id="sign-in">
+        <div class="back-close">
+            <div id="back">&#60 Back</div>
+            <div id="close" onclick="close1()">&#10005</div>
+        </div>
+        <div class="heading">Welcome to AJIO</div>
+        <div class="join">Join/Sign In using</div>
+        <div class="fb-google">
+            <div class="fb">
+                <img src="images/facebook.png" alt="">
+                <div>FACEBOOK</div>
+            </div>
+
+            <div class="g">
+                <img src="images/g-search.png" alt="">
+                <div>GOOGLE</div>
+            </div>
+        </div>
+
+        <div class="or">Or</div>
+
+        <div class="mobile-number">Enter Mobile Number / Email*</div>
+
+        <div class="input-mobile">
+            <input type="text">
+        </div>
+
+        <div class="submit-form">
+            <button>CONTINUE</button>
+        </div>
+
+        <div class="terms-sign-in">By Signing In, I agree to <span>Terms and Conditions.<span></div>
+    </div>
+
+    <!-- Header starts here -->
+
     <div class="header-container">
         <header>
             <div class="signin-customer-care">
@@ -63,14 +97,12 @@
                                                         <li> <a href="#">Track Pants </a></li>
                                                         <li> <a href="#">Trousers & Pants </a></li>
                                                         <li> <a href="#">T-Shirts </a></li>
-                                                    </a>
-                                                </ul>
+                                                    </a></ul>
                                                 <ul><a href="#"> Ethnic & Festive
                                                         <li> <a href="#">Kurtas </a></li>
                                                         <li> <a href="#">Nehru Jackets </a></li>
                                                         <li> <a href="#">Shirts </a></li>
-                                                    </a>
-                                                </ul>
+                                                    </a></ul>
                                             </div>
                                             <div>
                                                 <ul><a href="#"> Footwear
@@ -80,15 +112,13 @@
                                                         <li> <a href="#">Sandals </a></li>
                                                         <li> <a href="#">Sneakers </a></li>
                                                         <li> <a href="#">Sports Shoes </a></li>
-                                                    </a>
-                                                </ul>
+                                                    </a></ul>
                                                 <ul><a href="#"> Night & Loungwear </a></ul>
                                                 <ul><a href="#"> Innerwear
                                                         <li> <a href="#">Briefs </a></li>
                                                         <li> <a href="#">Trunks & Boxers </a></li>
                                                         <li> <a href="#">Vests </a></li>
-                                                    </a>
-                                                </ul>
+                                                    </a></ul>
                                             </div>
                                             <div>
                                                 <ul><a href="#"> Accessories
@@ -101,8 +131,7 @@
                                                         <li> <a href="#">Sunglasses & Frames </a></li>
                                                         <li> <a href="#">Wallets </a></li>
                                                         <li> <a href="#">Watches </a></li>
-                                                    </a>
-                                                </ul>
+                                                    </a></ul>
                                                 <ul><a href="#"> Winterwear </a></ul>
                                                 <ul><a href="#"> Precious Jewellery </a></ul>
                                                 <ul><a href="#"> Home & Kitchen </a></ul>
@@ -111,16 +140,14 @@
                                                         <li> <a href="#">Footwear Under 1499 </a></li>
                                                         <li> <a href="#">Jeans Under 1199 </a></li>
                                                         <li> <a href="#">Shorts & 3/4ths Under 699 </a></li>
-                                                    </a>
-                                                </ul>
+                                                    </a></ul>
                                             </div>
                                             <div>
                                                 <ul><a href="#"> #Ajiorecommends
                                                         <li> <a href="#">Denimology </a></li>
                                                         <li> <a href="#">Graphic Archive </a></li>
                                                         <li> <a href="#">Play Time </a></li>
-                                                    </a>
-                                                </ul>
+                                                    </a></ul>
                                             </div>
                                         </div>
                                     </div>
@@ -689,60 +716,204 @@
         </header>
     </div>
 
+    <!-- Header Enda here -->
 
 
-    <div id="page">
-        <div id="left_side">
-            <!-- <p>Home / Men Fashion</p> -->
-            <h2>Refine Buy</h2>
-            <ul>
-                <div>
-                    <button id="btn1">Gender</button>
-                    <div id="add1"></div>
-                </div>
-                <div>
-                    <button id="btn2">Catogary</button>
-                    <div id="add2"></div>
-                </div>
-                <div>
-                    <button id="btn3">Price</button>
-                    <div id="add3"></div>
-                </div>
-                <div>
-                    <button id="btn4">Brands</button>
-                    <div id="add4"></div>
-                </div>
-                <div>
-                    <button id="btn5">Size & Fit</button>
-                    <div id="add5"></div>
-                </div>
-            </ul>
+    <div class="blank"></div>
 
+    <div id="container">
+        <div id="address">
+            <p>Home/Men/Eyewear/Sunglasses/0RB3671186/3160/UV-Protected Full-Rim Shield Sunglasses</p>
         </div>
-
-        <!-- <hr> -->
-        <div id="right_side">
-            <h1>Men's Product</h1>
-            <hr>
-            <div>
-                <h4>9,316 Items Found</h4>
-                <div></div>
-                <p>SHORT BY </p>
-                <select id="select" onchange="short()">
-                    <option disabled hidden selected> Popularity</option>
-                    <option value="Popularity">Popularity</option>
-                    <option value="price_lowest">Price (Lowest First)</option>
-                    <option value="price_high">Price (Highest First)</option>
-                    <option value="discount">Discount</option>
-                </select>
+        <div id="product_detail">
+            <div id="image_slider">
+                <div class="image_option" id="1" onclick="test(this.id)">
+                    <!-- <img src="images/procuct_1_images/slider_image1" /> -->
+                </div>
+                <div class="image_option" id="2" onclick="test(this.id)">
+                    <!-- <img id="2" src="images/procuct_1_images/slider_image2" /> -->
+                </div>
+                <div class="image_option" id="3" onclick="test(this.id)">
+                    <!-- <img id="3" src="images/procuct_1_images/slider_image3" /> -->
+                </div>
+                <div class="image_option" id="4" onclick="test(this.id)">
+                    <!-- <img id="4" src="images/procuct_1_images/slider_image4" /> -->
+                </div>
+                <div class="image_option" id="5" onclick="test(this.id)">
+                    <!-- <img src="images/procuct_1_images/slider_image5" /> -->
+                </div>
             </div>
-            <hr>
-            <div id="product_box"></div>
+            <div id="image_window">
+                <div class="main_image">
+                    <!-- <img src="images/procuct_1_images/slider_image1" /> -->
+                </div>
+                <div class="service_statement">
+                    <div class="returns">
+                        <div id="return" onclick="return_stmt()">RETURNS</div>
+                        <div id="promise" onclick="promise_stmt()">OUR PROMISE</div>
+                    </div>
+                    <div id="return_statement">
+                        <p>Easy 7 days return and exchange. Return Policies may vary based on products and
+                            promotions. For full details on our Returns Policies, please <span>click here</span>.
+                        </p>
+                    </div>
+                    <div id="promise_statement">
+                        <p>We assure the authenticity and quality of our products</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div id="product_description">
+                <div class="name_price">
+                    <div class="name">RAY BAN</div>
+                    <div class="detail">0RB3671186/3160 UV-Protected Full-Rim Shield Sunglasses</div>
+                    <div class="price1">Rs. 9,590</div>
+                    <div class="price_detail">Price inclusive of all taxes</div>
+                </div>
+                <div id="offers">
+                    <div class="promo_title">
+                        <img src="images/procuct_1_images/sale.png" alt="" />
+                        <div>Use Code<br>FREEDEL<br><a href="">T&C</a></div>
+                    </div>
+                    <div class="promo_code_block">Free shiping for limited period <a href="">view all products></a>
+                    </div>
+                </div>
+                <div id="more_offers"><a href="">+4 More</a></div>
+                <div id="select_size">
+                    <p>Select size</p>
+                    <div class="size">
+                        <div class="sz">
+                            <p>S</p>
+                        </div>
+                        <div class="sz">
+                            <p>M</p>
+                        </div>
+                        <div class="sz">
+                            <p>L</p>
+                        </div>
+                        <div class="sz">
+                            <p>XL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pincode_msg">
+                    <img src="images/procuct_1_images/placeholder.png" alt="" />
+                    <div>Enter Pin-code To Know Estimated Delivery Date</div>
+                </div>
+
+                <div class="cart_buttons">
+                    <div class="add_to_bag" onclick="add_to_cart(this.id)">
+                        <img src="images/procuct_1_images/add_to_bag.png" alt="">
+                        <div>ADD TO BAG</div>
+                    </div>
+                    <div class="go_to_bag" id="go_to_bag" onclick="go_to_cart()">
+                        <img src="images/procuct_1_images/add_to_bag.png" alt="">
+                        <div>GO TO BAG</div>
+                    </div>
+                    <div class="prod_tips">HANDPICKED STYLES | ASSURED QUALITY</div>
+                    <div class="save_to_closet">
+                        <img src="images/procuct_1_images/add_to_closet.png" alt="">
+                        <div>ADD TO CLOSET</div>
+                    </div>
+                </div>
+
+                <div class="prod_desc">
+                    <h3 class="prod_heading">Product Details</h3>
+
+                    <ul id="prod-list">
+                        <li class="detail-list">Lens length: 60 mm; width: 41 mm</li>
+                        <li class="detail-list">Full-rim Frame</li>
+                        <li class="detail-list">UV Protected Lens</li>
+                        <li class="detail-list">6-month warranty against manufacturing defects</li>
+                        <li class="detail-list">Metal Frame</li>
+                        <li class="detail-list">Glass Lens</li>
+                        <li class="detail-list">Model number: 0RB3671186/3160</li>
+                        <li class="detail-list">Product Code: 460882644001</li>
+                        <div class="other-info-toggle">Other information +</div>
+
+                    </ul>
+
+                </div>
+            </div>
+
         </div>
+        <div class="shop_more">
+            <h2><span> Shop More Sunglasses </span></h2>
+        </div>
+        <div id="more_menu">
+            <div class="more_menu_item">
+                <a href=""><span> All Sunglasses </span> > </a>
+            </div>
+            <div class="more_menu_item">
+                <a href=""><span> Style: Shield </span> > </a>
+            </div>
+            <div class="more_menu_item">
+                <a href=""><span> Color: Green </span>> </a>
+            </div>
+            <div class="more_menu_item">
+                <a href=""><span> Brand: Ray Ban </span> > </a>
+            </div>
+        </div>
+
+        <div class="shop_more">
+            <h2><span> Similar Styles </span></h2>
+        </div>
+
+        <div id="styles">
+            <div class="more_styles">
+                <img src="images/procuct_1_images/rayban1" />
+                <div class="brand_name">RAY BAN</div>
+                <div class="item_des">0RB3671186/3160 UV-Protected....</div>
+                <div class="price">Rs. 6,741</div>
+                <div class="mrp"><span class="mrp1">Rs 7,490</span><span class="mrp2"> (10% Off)</span></div>
+            </div>
+
+            <div class="more_styles">
+                <img src="images/procuct_1_images/rayban2" />
+                <div class="brand_name">RAY BAN</div>
+                <div class="item_des">0RB3671186/3160 UV-Protected....</div>
+                <div class="price">Rs. 6,741</div>
+                <div class="mrp"><span class="mrp1">Rs 7,490</span><span class="mrp2"> (10% Off)</span></div>
+            </div>
+
+            <div class="more_styles">
+                <img src="images/procuct_1_images/rayban3" />
+                <div class="brand_name">RAY BAN</div>
+                <div class="item_des">0RB3671186/3160 UV-Protected....</div>
+                <div class="price">Rs. 6,741</div>
+                <div class="mrp"><span class="mrp1">Rs 7,490</span><span class="mrp2"> (10% Off)</span></div>
+            </div>
+
+            <div class="more_styles">
+                <img src="images/procuct_1_images/rayban4" />
+                <div class="brand_name">RAY BAN</div>
+                <div class="item_des">0RB3671186/3160 UV-Protected....</div>
+                <div class="price">Rs. 6,741</div>
+                <div class="mrp"><span class="mrp1">Rs 7,490</span><span class="mrp2"> (10% Off)</span></div>
+            </div>
+        </div>
+
     </div>
 
-    <!---------------------- Footer start ----------------->
-    <footer>
+</body>
+<footer>
+    <div id="service">
+        <div class="service_item">
+            <img src="images/procuct_1_images/easy_return.png" />
+            <div>EASY EXCHANGE*</div>
+        </div>
+        <div class="service_item">
+            <img src="images/procuct_1_images/heart.png" />
+            <div>100% HANDPICKED</div>
+        </div>
+        <div class="service_item">
+            <img src="images/procuct_1_images/quality.png" />
+            <div>ASSURED QUALITY</div>
+        </div>
+
+    </div>
+    <div id="ftr_menu">
         <div class="menu_item">
             <div class="item_list">
                 <div class="headline">Ajio</div>
@@ -797,29 +968,29 @@
         <div id="payment">
             <div id="payment_method">
                 <div class="pay_title">
-                    <p>Payment Methods</p>
+                    <h2>Payment Methods</h2>
                 </div>
                 <div class="pay_logo">
                     <div class="pay_img">
-                        <a href=""><img src="images/footer/net_banking.jpg" alt=""></a>
+                        <a href=""><img src="images/procuct_1_images/net_banking.jpg" alt=""></a>
                     </div>
                     <div class="pay_img">
-                        <a href=""><img src="images/footer/visa.jpg" alt=""></a>
+                        <a href=""><img src="images/procuct_1_images/visa.jpg" alt=""></a>
                     </div>
                     <div class="pay_img">
-                        <a href=""><img src="images/footer/master_card.jpg" alt=""></a>
+                        <a href=""><img src="images/procuct_1_images/master_card.jpg" alt=""></a>
                     </div>
                     <div class="pay_img">
-                        <a href=""><img src="images/footer/cash_on_delivery.jpg" alt=""></a>
+                        <a href=""><img src="images/procuct_1_images/cash_on_delivery.jpg" alt=""></a>
                     </div>
                     <div class="pay_img">
-                        <a href=""><img src="images/footer/jio_money.jpg" alt=""></a>
+                        <a href=""><img src="images/procuct_1_images/jio_money.jpg" alt=""></a>
                     </div>
                 </div>
             </div>
             <div id="secure_payment">
                 <div class="pay_title">
-                    <p>Secure Systems</p>
+                    <h2>Secure Systems</h2>
                 </div>
                 <div class="pay_img">
                     <a href="">
@@ -829,394 +1000,9 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <!--------------------- Footer end ------------------->
-</body>
+    </div>
+</footer>
 
 </html>
 
-<script>
-    //for right side script
-    const product_details = [
-        {
-            company_name: 'ROADSTER',
-            description: 'Graphic Regular Fit Crew- Neck T-shirt',
-            price: '330',
-            original_price: 'Rs. 1,099',
-            discount: '70',
-            quantity: 1,
-            poster: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1376577/2016/9/15/11473928353466-Roadster-Men-Black-Regular-Fit-Checked-Casual-Shirt-4501473928353310-1.jpg',
-            poster2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1376577/2016/9/15/11473928353440-Roadster-Men-Black-Regular-Fit-Checked-Casual-Shirt-4501473928353310-2.jpg',
-            poster3: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1376577/2016/9/15/11473928353416-Roadster-Men-Black-Regular-Fit-Checked-Casual-Shirt-4501473928353310-3.jpg',
-            poster4: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1376577/2016/9/15/11473928353388-Roadster-Men-Black-Regular-Fit-Checked-Casual-Shirt-4501473928353310-4.jpg',
-            poster5: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1376577/2016/9/15/11473928353356-Roadster-Men-Black-Regular-Fit-Checked-Casual-Shirt-4501473928353310-5.jpg'
-        },
-
-        {
-            company_name: 'DNMX',
-            description: 'Mid-Rise Fitted Jeans',
-            price: '679',
-            original_price: 'Rs. 799',
-            discount: '70',
-            quantity: 1,
-            poster: 'https://assets.ajio.com/medias/sys_master/root/ha5/h6b/14876613738526/-473Wx593H-441038483-black-MODEL3.jpg',
-            poster2: 'https://assets.ajio.com/medias/sys_master/root/ha5/h6b/14876613738526/-473Wx593H-441038483-black-MODEL3.jpg',
-            poster3: 'https://assets.ajio.com/medias/sys_master/root/hd4/h47/14876632547358/-473Wx593H-441038483-black-MODEL4.jpg',
-            poster4: 'https://assets.ajio.com/medias/sys_master/root/hd4/h47/14876632547358/-473Wx593H-441038483-black-MODEL4.jpg',
-            poster5: 'https://assets.ajio.com/medias/sys_master/root/hd4/h47/14876632547358/-473Wx593H-441038483-black-MODEL4.jpg'
-        },
-        {
-            company_name: 'FRENCH COLLECTION',
-            description: 'Columbia Lightly Washed Skinny Fit Jeans',
-            price: '1715',
-            original_price: 'Rs. 3,299 ',
-            discount: '70',
-            quantity: 1,
-            poster: 'https://assets.ajio.com/medias/sys_master/root/20210212/LQXd/6026a890aeb26969816477e8/-473Wx593H-460827661-ltblue-MODEL.jpg',
-            poster2: 'https://assets.ajio.com/medias/sys_master/root/20210212/rYyF/6026a890f997dd5c40ef6cf7/-473Wx593H-460827661-ltblue-MODEL4.jpg',
-            poster3: 'https://assets.ajio.com/medias/sys_master/root/20210212/rYyF/6026a890f997dd5c40ef6cf7/-473Wx593H-460827661-ltblue-MODEL4.jpg',
-            poster4: 'https://assets.ajio.com/medias/sys_master/root/20210212/rYyF/6026a890f997dd5c40ef6cf7/-473Wx593H-460827661-ltblue-MODEL4.jpg',
-            poster5: 'https://assets.ajio.com/medias/sys_master/root/20210212/rYyF/6026a890f997dd5c40ef6cf7/-473Wx593H-460827661-ltblue-MODEL4.jpg'
-        },
-        {
-            company_name: 'IVOC',
-            description: 'Mid-Rise Jogger Jeans with Zip Pocket',
-            price: '792',
-            original_price: 'Rs. 1,799',
-            discount: '80',
-            quantity: 1,
-            poster: 'https://assets.ajio.com/medias/sys_master/root/20210403/3vuZ/606864cc7cdb8c1f1474f313/-473Wx593H-461094398-blue-MODEL.jpg',
-            poster2: 'https://assets.ajio.com/medias/sys_master/root/20210403/ntpG/606864cb7cdb8c1f1474f297/-473Wx593H-461094398-blue-MODEL6.jpg',
-            poster3: 'https://assets.ajio.com/medias/sys_master/root/20210403/ntpG/606864cb7cdb8c1f1474f297/-473Wx593H-461094398-blue-MODEL6.jpg',
-            poster4: 'https://assets.ajio.com/medias/sys_master/root/20210403/ntpG/606864cb7cdb8c1f1474f297/-473Wx593H-461094398-blue-MODEL6.jpg',
-            poster5: 'https://assets.ajio.com/medias/sys_master/root/20210403/ntpG/606864cb7cdb8c1f1474f297/-473Wx593H-461094398-blue-MODEL6.jpg'
-        },
-        {
-            company_name: 'DENNISLINGO PREMIUM ATTIRE',
-            description: 'Full Sleeves Slim Fit Classic Shirt',
-            price: '573',
-            original_price: 'Rs.1849',
-            discount: '10',
-            quantity: 1,
-            poster: 'https://assets.ajio.com/medias/sys_master/root/20210428/D6Ix/60897dc6f997dd7b64c7767b/-473Wx593H-462323964-pink-MODEL5.jpg',
-            poster2: 'https://assets.ajio.com/medias/sys_master/root/20210428/D6Ix/60897dc6f997dd7b64c7767b/-473Wx593H-462323964-pink-MODEL5.jpg',
-            poster3: 'https://assets.ajio.com/medias/sys_master/root/20210428/D6Ix/60897dc6f997dd7b64c7767b/-473Wx593H-462323964-pink-MODEL5.jpg',
-            poster4: 'https://assets.ajio.com/medias/sys_master/root/20210428/D6Ix/60897dc6f997dd7b64c7767b/-473Wx593H-462323964-pink-MODEL5.jpg',
-            poster5: 'https://assets.ajio.com/medias/sys_master/root/20210428/D6Ix/60897dc6f997dd7b64c7767b/-473Wx593H-462323964-pink-MODEL5.jpg'
-        },
-        {
-            company_name: 'DENNISLINGO PREMIUM ATTIRE',
-            description: 'Full Sleeves Slim Fit Shirt',
-            price: '573',
-            original_price: 'Rs. 1849',
-            discount: '65',
-            quantity: 1,
-            poster: 'https://assets.ajio.com/medias/sys_master/root/20210420/opz8/607ecd0df997dd7b64b802f5/-473Wx593H-462323964-white-MODEL7.jpg',
-            poster2: 'https://assets.ajio.com/medias/sys_master/root/20210420/opz8/607ecd0df997dd7b64b802f5/-473Wx593H-462323964-white-MODEL7.jpg',
-            poster3: 'https://assets.ajio.com/medias/sys_master/root/20210420/opz8/607ecd0df997dd7b64b802f5/-473Wx593H-462323964-white-MODEL7.jpg',
-            poster4: 'https://assets.ajio.com/medias/sys_master/root/20210420/opz8/607ecd0df997dd7b64b802f5/-473Wx593H-462323964-white-MODEL7.jpg',
-            poster5: 'https://assets.ajio.com/medias/sys_master/root/20210420/opz8/607ecd0df997dd7b64b802f5/-473Wx593H-462323964-white-MODEL7.jpg'
-        },
-        {
-            company_name: 'THE INDIAN GARAGE CO',
-            description: 'Checked Slim Fit Shirt with Patch Pocket',
-            price: '612',
-            original_price: 'Rs. 1749',
-            discount: '70',
-            quantity: 1,
-            poster: 'https://assets.ajio.com/medias/sys_master/root/20210316/TIPl/604faba1f997dd5c401134c8/-473Wx593H-460698898-navy-MODEL.jpg',
-            poster2: 'https://assets.ajio.com/medias/sys_master/root/20200902/UTIy/5f4e9d76aeb269ef8eb53a48/-473Wx593H-460698898-navy-MODEL2.jpg',
-            poster3: 'https://assets.ajio.com/medias/sys_master/root/20200902/iAFU/5f4e95f3aeb269ef8eb51119/-473Wx593H-460698898-navy-MODEL3.jpg',
-            poster4: 'https://assets.ajio.com/medias/sys_master/root/20200902/BNq5/5f4e99ef7cdb8c76629047fe/-473Wx593H-460698898-navy-MODEL4.jpg',
-            poster5: 'https://assets.ajio.com/medias/sys_master/root/20200902/a63Y/5f4e9fc8f997dd6918b21746/-473Wx593H-460698898-navy-MODEL5.jpg'
-        },
-        {
-            company_name: 'THE INDIAN GARAGE CO',
-            description: 'Checked Slim Fit Shirt with Patch Pocket',
-            price: '612',
-            original_price: 'Rs. 1749',
-            discount: '70',
-            quantity: 1,
-            poster: 'https://assets.ajio.com/medias/sys_master/root/20210316/XA79/604fbf6c7cdb8c1f14635bff/-473Wx593H-460698915-navy-MODEL.jpg',
-            poster2: 'https://assets.ajio.com/medias/sys_master/root/20200821/kW8T/5f3fef03aeb2693e046c88ee/-473Wx593H-460698915-navy-MODEL2.jpg',
-            poster3: 'https://assets.ajio.com/medias/sys_master/root/20200821/D04c/5f3fe568f997dd2277a33e16/-473Wx593H-460698915-navy-MODEL3.jpg',
-            poster4: 'https://assets.ajio.com/medias/sys_master/root/20200821/eWJU/5f3fe4efaeb2693e046c605d/-473Wx593H-460698915-navy-MODEL4.jpg',
-            poster5: 'https://assets.ajio.com/medias/sys_master/root/20200821/WLLF/5f3fe70bf997dd2277a34960/-473Wx593H-460698915-navy-MODEL5.jpg'
-        },
-        {
-            company_name: 'DENNISLINGO PREMIUM ATTIRE',
-            description: 'Slim Fit Shirt with Spread Collar',
-            price: '573',
-            original_price: 'Rs. 1849',
-            discount: '70',
-            quantity: 1,
-            poster: 'https://assets.ajio.com/medias/sys_master/root/20210420/1o3B/607eccfeaeb269a9e3972a05/-473Wx593H-462323964-purple-MODEL.jpg',
-            poster2: 'https://assets.ajio.com/medias/sys_master/root/20210420/FIfr/607eccfeaeb269a9e3972979/-473Wx593H-462323964-purple-MODEL2.jpg',
-            poster3: 'https://assets.ajio.com/medias/sys_master/root/20210420/EgRb/607eccfeaeb269a9e397297a/-473Wx593H-462323964-purple-MODEL3.jpg',
-            poster4: 'https://assets.ajio.com/medias/sys_master/root/20210420/1l5v/607eccfeaeb269a9e3972987/-473Wx593H-462323964-purple-MODEL4.jpg',
-            poster5: 'https://assets.ajio.com/medias/sys_master/root/20210420/PdwT/607eccfeaeb269a9e397297e/-473Wx593H-462323964-purple-MODEL7.jpg'
-        },
-        {
-            company_name: 'PERFORMAX',
-            description: 'Panelled Track Pants with Elasticated Drawstring Waist',
-            price: '449',
-            original_price: 'Rs. 599',
-            discount: '70',
-            quantity: 1,
-            poster: 'https://assets.ajio.com/medias/sys_master/root/20200919/8kRX/5f64febb7cdb8c21e36685ad/-473Wx593H-440971924-jetblack-MODEL.jpg',
-            poster2: 'https://assets.ajio.com/medias/sys_master/root/20200919/Hibw/5f6509147cdb8c21e366c964/-473Wx593H-440971924-jetblack-MODEL2.jpg',
-            poster3: 'https://assets.ajio.com/medias/sys_master/root/20200919/zxmw/5f6503b37cdb8c21e3669ad5/-473Wx593H-440971924-jetblack-MODEL3.jpg',
-            poster4: 'https://assets.ajio.com/medias/sys_master/root/20200919/KwWv/5f64fec0f997dd8c8346059b/-473Wx593H-440971924-jetblack-MODEL4.jpg',
-            poster5: 'https://assets.ajio.com/medias/sys_master/root/20200919/5BhS/5f64ff48aeb269d563c55e48/-473Wx593H-440971924-jetblack-MODEL6.jpg'
-        },
-        {
-            company_name: 'PERFORMAX',
-            description: 'Panelled Track Pants with Elasticated Drawstring Waist',
-            price: '449',
-            original_price: 'Rs. 599',
-            discount: '70',
-            quantity: 1,
-            poster: 'https://assets.ajio.com/medias/sys_master/root/hc7/h73/13989388288030/-473Wx593H-440971924-teal-MODEL.jpg',
-            poster2: 'https://assets.ajio.com/medias/sys_master/root/h6f/h2f/13989386092574/-473Wx593H-440971924-teal-MODEL2.jpg',
-            poster3: 'https://assets.ajio.com/medias/sys_master/root/h21/hac/13989405032478/-473Wx593H-440971924-teal-MODEL3.jpg',
-            poster4: 'https://assets.ajio.com/medias/sys_master/root/he7/ha8/13989398347806/-473Wx593H-440971924-teal-MODEL4.jpg',
-            poster5: 'https://assets.ajio.com/medias/sys_master/root/he5/haa/13989401624606/-473Wx593H-440971924-teal-MODEL5.jpg'
-        },
-        {
-            company_name: 'TEAMSPIRIT',
-            description: 'Heathered Track Pants with Contrast Taping',
-            price: '374',
-            original_price: 'Rs. 499',
-            discount: '70',
-            quantity: 1,
-            poster: 'https://assets.ajio.com/medias/sys_master/root/had/he4/15155852640286/-473Wx593H-441031716-charcoal-MODEL.jpg',
-            poster2: 'https://assets.ajio.com/medias/sys_master/root/hee/h6b/15155849986078/-473Wx593H-441031716-charcoal-MODEL2.jpg',
-            poster3: 'https://assets.ajio.com/medias/sys_master/root/h76/hfb/15155863912478/-473Wx593H-441031716-charcoal-MODEL3.jpg',
-            poster4: 'https://assets.ajio.com/medias/sys_master/root/hbf/hab/15155846905886/-473Wx593H-441031716-charcoal-MODEL4.jpg',
-            poster5: 'https://assets.ajio.com/medias/sys_master/root/hbf/hab/15155846905886/-473Wx593H-441031716-charcoal-MODEL4.jpg'
-        }
-    ]
-
-    localStorage.setItem('product_details', JSON.stringify(product_details))
-
-    var box = document.getElementById('product_box')
-
-    function appendproducts(data) {
-        // var data = JSON.parse(localStorage.getItem('product_details'))
-        box.innerHTML = null
-        var id = 0
-
-        data.forEach(function (el) {
-            let div = document.createElement('div')
-            div.setAttribute('class', 'box')
-            div.setAttribute('id', `${id}`)
-            div.setAttribute('onclick', 'extract_detail(this.id)')
-
-            id++
-            div.innerHTML =
-                `<img src="${el.poster}" alt="img${id}"/>
-                    <div>
-                        <p>${el.company_name}</p>
-                        <p>${el.description}</p>
-                        <div>
-                            <span>Rs. ${el.price}</span>
-                            <span>${el.original_price}</span>
-                            <span>(${el.discount}% off)</span>
-                        </div>
-                    </div>`
-            box.append(div)
-        })
-    }
-    appendproducts(JSON.parse(localStorage.getItem('product_details')))
-
-
-    function short() {
-        var select = document.getElementById('select').value
-        console.log('select:', select)
-
-        if (select == 'price_lowest') {
-            let product_details = JSON.parse(localStorage.getItem('product_details'))
-
-            product_details = product_details.sort(function (a, b) {
-                return a.price - b.price
-            })
-            // console.log(product_details);
-            appendproducts(product_details)
-        } else if (select == 'price_high') {
-            let product_details = JSON.parse(localStorage.getItem('product_details'))
-
-            product_details = product_details.sort(function (a, b) {
-                return b.price - a.price
-            })
-            // console.log(product_details);
-            appendproducts(product_details)
-        } else if (select == 'discount') {
-            let product_details = JSON.parse(localStorage.getItem('product_details'))
-
-            product_details = product_details.sort(function (a, b) {
-                return a.discount - b.discount
-            })
-            // console.log(product_details);
-            appendproducts(product_details)
-        } else {
-            var data = JSON.parse(localStorage.getItem('product_details'))
-            appendproducs(data)
-        }
-    }
-
-    //for left side script
-
-    var btn1 = document.getElementById('btn1')
-    var add1 = document.getElementById('add1')
-    var count1 = 0
-
-    function create1() {
-        var div = document.createElement('div')
-        div.innerHTML = `<div><input type="checkbox"> Men (9,211)</div>
-        <div><input type="checkbox"> Women (1)</div>
-        <hr>`
-        count1++
-        // console.log(count1);
-        if (count1 % 2 == 1) {
-            // console.log(div);
-            add1.appendChild(div)
-            btn1.style.color = "blue"
-        } else if (count1 % 2 == 0) {
-            // console.log(div);
-            let p = add1.firstChild
-            // console.log(p);
-            p.remove()
-            btn1.style.color = "black"
-        }
-        // console.log(btn1);
-    }
-    btn1.addEventListener('click', create1)
-
-    var btn2 = document.getElementById('btn2')
-    var add2 = document.getElementById('add2')
-    var count2 = 0
-
-    function create2() {
-        var div = document.createElement('div')
-        div.innerHTML = `<div><input type="checkbox"> Belts (1,310)</div>
-        <div><input type="checkbox"> Tshirts (1,167)</div>
-        <div><input type="checkbox"> Sports Shoes (806)</div>
-        <div><input type="checkbox"> Casual Shoes (744)</div>
-        <div><input type="checkbox"> Shirts (789)</div>
-        <hr>`
-        count2++
-        if (count2 % 2 == 1) {
-            add2.appendChild(div)
-            btn2.style.color = "blue"
-        } else if (count2 % 2 == 0) {
-            let p = add2.firstChild
-            p.remove()
-            btn2.style.color = "black"
-        }
-    }
-    btn2.addEventListener('click', create2)
-
-    var btn3 = document.getElementById('btn3')
-    var add3 = document.getElementById('add3')
-    var count3 = 0
-
-    function create3() {
-        var div = document.createElement('div')
-        div.innerHTML = `<div><input type="checkbox"> Below Rs.500 (2,052)</div>
-        <div><input type="checkbox"> Rs.500-1000 (5,576)</div>
-        <div><input type="checkbox"> Rs.1001-1500 (1,196)</div>
-        <div><input type="checkbox"> Rs.1501-2000 (316)</div>
-        <div><input type="checkbox"> Rs.2001-2500 (46)</div>
-        <hr>`
-        count3++
-        if (count3 % 2 == 1) {
-            console.log(div);
-            add3.appendChild(div)
-            btn3.style.color = "blue"
-        } else if (count3 % 2 == 0) {
-            // console.log(div);
-            let p = add3.firstChild
-            // console.log(p);
-            p.remove()
-            btn3.style.color = "black"
-        }
-    }
-    btn3.addEventListener('click', create3)
-
-    var btn4 = document.getElementById('btn4')
-    var add4 = document.getElementById('add4')
-    var count4 = 0
-
-    function create4() {
-        var div = document.createElement('div')
-        div.innerHTML = `<div><input type="checkbox"> RED TAPE (115)</div>
-        <div><input type="checkbox"> The Indian Garage Co (52)</div>
-        <div><input type="checkbox"> DELIZE (27)</div>
-        <div><input type="checkbox"> ROADIES (20)</div>
-        <div><input type="checkbox"> MONDAIN (16)</div>
-        <hr>`
-        count4++
-        if (count4 % 2 == 1) {
-            console.log(div);
-            add4.appendChild(div)
-            btn4.style.color = "blue"
-        } else if (count4 % 2 == 0) {
-            // console.log(div);
-            let p = add4.firstChild
-            // console.log(p);
-            p.remove()
-            btn4.style.color = "black"
-        }
-    }
-    btn4.addEventListener('click', create4)
-
-    var btn5 = document.getElementById('btn5')
-    var add5 = document.getElementById('add5')
-    var count5 = 0
-
-    function create5() {
-        var div = document.createElement('div')
-        div.innerHTML = `<div><input type="checkbox"> UK10 (121)</div>
-        <div><input type="checkbox"> UK9 (27)</div>
-        <div><input type="checkbox"> UK8 (68)</div>
-        <div><input type="checkbox"> UK7 (20)</div>
-        <div><input type="checkbox"> UK11 (16)</div>
-        <hr>`
-        count5++
-        if (count5 % 2 == 1) {
-            add5.appendChild(div)
-            btn5.style.color = "blue"
-        } else if (count5 % 2 == 0) {
-            let p = add5.firstChild
-            p.remove()
-            btn5.style.color = "black"
-        }
-
-    }
-    btn5.addEventListener('click', create5)
-
-    //Extracting product detail on click
-
-    function extract_detail(id) {
-        let d = [];
-
-        if (localStorage.getItem('products') == undefined) {
-            localStorage.setItem('products', JSON.stringify(d));
-        }
-
-        let data = JSON.parse(localStorage.getItem('products'));
-        let prod = JSON.parse(localStorage.getItem('product_details'));
-
-        console.log(prod[id]);
-
-        data.push(prod[id]);
-
-        console.log(data);
-
-        localStorage.setItem('products', JSON.stringify(data));
-
-        window.open('procuct1.html')
-
-    }
-</script>
-<script src="js/main.js"></script>
+<script src="js/product1.js"></script>
