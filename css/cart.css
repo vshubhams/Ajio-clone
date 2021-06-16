@@ -93,187 +93,8 @@ body {
 
 /* Quality popup ends */
 
-/* Sign-in Pop-up */
 
-#sign-in {
-  width: 25%;
-  height: 95vh;
-  margin: auto;
-  background-color: white;
-  border: 1px solid blue;
-  position: absolute;
-  top: 2%;
-  left: 40%;
-  position: fixed;
-  display: none;
-  z-index: 200;
-}
 
-#sign-in > div {
-  margin: 20px;
-}
-
-.back-close {
-  display: flex;
-  justify-content: space-between;
-}
-
-#back,
-#close {
-  cursor: pointer;
-  color: gray;
-  font-size: 20px;
-}
-
-#back {
-  visibility: hidden;
-}
-.heading {
-  font-size: 25px;
-  margin: 20px;
-  color: gray;
-  font-family: sans-serif;
-}
-
-.join {
-  /* font-size: 12px; */
-  margin: 20px;
-  color: gray;
-}
-
-.fb-google {
-  display: flex;
-  justify-content: center;
-  width: 89%;
-  margin: 0px 20px 0px 20px;
-}
-
-.fb,
-.g {
-  display: flex;
-  width: 50%;
-  height: 30px;
-  padding: 5px 20px 5px 20px;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.fb img,
-.g img {
-  width: 20%;
-  height: 90%;
-}
-
-.fb {
-  border: 2px solid #3b5998;
-  border-radius: 2px;
-  margin-right: 10px;
-}
-
-.g {
-  border: 2px solid #f13c3f;
-  border-radius: 2px;
-  margin-left: 10px;
-}
-
-.fb > div {
-  color: #3b5998;
-  font-weight: bold;
-  margin-left: 5px;
-  margin-top: 5px;
-  font-family: sans-serif;
-}
-
-.g > div {
-  color: #f13c3f;
-  font-weight: bold;
-  margin-left: 5px;
-  margin-top: 5px;
-  font-family: sans-serif;
-}
-
-.or {
-  text-align: center;
-  margin: 20px;
-  color: gray;
-}
-
-.mobile-number {
-  color: gray;
-}
-
-.input-mobile > input {
-  outline: none;
-  border: 0px;
-  border-bottom: 1px solid black;
-  width: 85%;
-  height: 40px;
-  font-size: 25px;
-}
-
-.submit-form > button {
-  width: 45%;
-  height: 35px;
-  border: 0px;
-  background-color: #d5a249;
-  cursor: pointer;
-  color: white;
-}
-
-.terms-sign-in {
-  color: gray;
-  font-size: 12px;
-}
-
-.terms-sign-in > span {
-  color: rgb(62, 62, 236);
-}
-
-/* Sign in pop - up ends here */
-
-/* Cart header */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  width: 100%;
-  height: 86px;
-  flex-direction: row;
-  border-top: solid 3px #2c4152;
-  background-color: #fff;
-  font-family: "Source Sans Pro", sans-serif;
-  border-bottom: 1px solid #e0e0e0;
-  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
-  position: fixed;
-  z-index: 100;
-}
-
-#cart-header {
-  width: 99vw;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px transparent blue;
-}
-
-#cart-header img {
-  width: 8%;
-  height: 80%;
-  margin-left: 10%;
-}
-
-#signin-signup {
-  margin-right: 10%;
-}
-
-#sign-in-header:hover,
-#customer-care:hover {
-  cursor: pointer;
-  color: #3b5998;
-}
 
 #blank {
   height: 100px;
@@ -551,4 +372,11 @@ header {
   opacity: 0.5;
   width: 35px;
   margin-right: 10px;
+}
+
+.nav>img{
+  width: 100%; 
+  position: relative;
+  top: -14px;
+  left: 60px;
 }

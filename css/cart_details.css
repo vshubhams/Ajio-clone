@@ -4,76 +4,6 @@
 }
 
 
-/* Header starts here */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    width: 100%;
-    height: 86px;
-    flex-direction: row;
-    border-top: solid 3px #2c4152;
-    background-color: #fff;
-    font-family: "Source Sans Pro", sans-serif;
-    border-bottom: 1px solid #e0e0e0;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
-    position: fixed;
-    z-index: 100;
-}
-
-#cart-header {
-    width: 99vw;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px transparent blue;
-}
-
-#bag_details {
-    height: 5vh;
-    width: 20vw;
-    margin-right: 300px;
-    margin-top: 24px;
-    display: flex;
-}
-
-#bag_details>div:nth-child(odd) {
-    height: 2vw;
-    width: 2vw;
-    border: 2px solid #304355;
-    border-radius: 50%;
-}
-
-#bag_details>div:nth-child(even) {
-    width: 100px;
-    border: 1px solid #304355;
-    height: 0px;
-    margin-top: 18px;
-}
-
-#cart-header img {
-    width: 8%;
-    height: 80%;
-    margin-left: 10%;
-}
-
-#signin-signup {
-    margin-right: 10%;
-    margin-top: 6px;
-}
-
-#sign-in-header:hover,
-#customer-care:hover {
-    cursor: pointer;
-    color: #3b5998;
-}
-
-
-/* Header ends here */
-
 #page {
     width: 100%;
     height: 100%;
@@ -334,7 +264,12 @@ body {
     gap: 2vw;
 }
 
-
-/* .address_grid {
-border: 2px dashed blue;
-} */
+.nav>img{
+   width: 100%; 
+   position: relative;
+   top: -14px;
+   left: 10px;
+}
+footer{
+    background-color: white;
+}

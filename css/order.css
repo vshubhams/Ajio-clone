@@ -1,0 +1,33 @@
+.order-cont{
+    position: relative;
+    width: 100%;
+    min-width: 1263px;
+    top: 110px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    background-color: #F0F0F0;
+}
+.order-text{
+    width: 60%;
+    /* border: solid; */
+}
+#orderText{
+font-family: 'Source Sans Pro', sans-serif;
+color: #333333;
+}
+.btn-cont{
+    width: 25%;
+    /* border: solid rgb(204, 195, 195); */
+}
+.cont-shopping{
+    background-color: #d4a048;
+    border: none;
+    color: white;
+    padding: 18px 80px;
+}
+.cont-shopping:hover{
+    background-color: #b88837;
+}
+  
