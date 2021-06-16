@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Shopping Bag | AJIO</title>
 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cart.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -24,6 +25,48 @@
 
 <body>
 
+
+    <!--------------SignIn box start ---------->
+    <div class="sign-in-container">
+        <div class="sign-in-box">
+        
+            <div onclick="hideBox()" class="close" >X</div>
+    
+    
+            <h2 class="box-heading top">Welocome to AJIO</h2>
+            <h3 class="box-heading join">Join/Sign In using</h3>
+            <div class="link-box">
+                <div class="fb"><img src="images/signInBox/fb.jpg" alt=""> Fackbook</div>
+                <div class="google"><img src="images/signInBox/google.jpg" alt=""> Google</div>
+            </div>
+            <div class="or">Or</div>
+            <div class="line left"></div>
+            <div class="line right"></div>
+            <h3 class="box-heading small" id="inputHeading">Enter Mobile Number*</h3>
+            
+            <p id="warning"></p>
+            <input type="text" id="number"><br>
+            <div class="hide input-container" id="inputCont" >
+                <div class="radioBox" id="radioBox">Gender:
+                    <label>
+                        <input type="radio" name="radio-button" value="no"/>
+                        <span>Female</span>
+                      </label>
+                    
+                      <label>
+                        <input type="radio" name="radio-button" value="no" />
+                        <span>Male</span>
+                      </label>
+                </div>
+                <input type="text" id="name" placeholder="Name"><br>
+                <input type="text" id="email" placeholder="Email"><br>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <button onclick="goToSignUP()" class="continue" id="continueBtn">CONTINUE</button>
+            <h3 class="box-heading lite">By Signing in, I agree to <span class="blue-span">Term and Conditions.</span></h3>
+        </div>
+        </div>
+    <!--------------SignIn box end ------------>
     <!-- Quantity popup starts -->
 
     <div class="quantity-container">
@@ -62,41 +105,6 @@
     </div>
 
     <!-- Quantity popup ends -->
-
-
-    <div id="sign-in">
-        <div class="back-close">
-            <div id="back">&#60 Back</div>
-            <div id="close" onclick="close1()">&#10005</div>
-        </div>
-        <div class="heading">Welcome to AJIO</div>
-        <div class="join">Join/Sign In using</div>
-        <div class="fb-google">
-            <div class="fb">
-                <img src="images/facebook.png" alt="">
-                <div>FACEBOOK</div>
-            </div>
-
-            <div class="g">
-                <img src="images/g-search.png" alt="">
-                <div>GOOGLE</div>
-            </div>
-        </div>
-
-        <div class="or">Or</div>
-
-        <div class="mobile-number">Enter Mobile Number / Email*</div>
-
-        <div class="input-mobile">
-            <input type="text">
-        </div>
-
-        <div class="submit-form">
-            <button>CONTINUE</button>
-        </div>
-
-        <div class="terms-sign-in">By Signing In, I agree to <span>Terms and Conditions.<span></div>
-    </div>
 
     <div id="blank"></div>
 
@@ -198,115 +206,97 @@
             <div>EASY RETURNS</div>
         </div>
     </div>
-
-</body>
-
-<footer>
-
-    <div id="service">
-        <div class="service_item">
-            <img src="images/procuct_1_images/easy_return.png" />
-            <div>EASY EXCHANGE*</div>
+    <!---------------------- Footer start ----------------->
+    <footer>
+    <div><img style="min-width:1263px; width: 100%;" src="images/stripe/above-footer.png" alt=""></div>
+    <div class="menu_item">
+        <div class="item_list">
+            <div class="headline">Ajio</div>
+            <div class="ftr_items">
+                <a href="">Who we are</a>
+                <a href="">Join our team</a>
+                <a href="">Terms & conditions</a>
+                <a href="">We respect your privacy</a>
+                <a href="">Fee & Payments</a>
+                <a href="">Return & Refunds policy</a>
+                <a href="">Promotions Terms & Conditions</a>
+            </div>
         </div>
-        <div class="service_item">
-            <img src="images/procuct_1_images/heart.png" />
-            <div>100% HANDPICKED</div>
+        <div class="item_list">
+            <div class="headline">Help</div>
+            <div class="ftr_items">
+                <a href="">Track your order</a>
+                <a href="">Frequently Asked Questions</a>
+                <a href="">Returns</a>
+                <a href="">Cancellations</a>
+                <a href="">Payments</a>
+                <a href="">Customer Care</a>
+                <a href="">How Do I Redeem My Coupon</a>
+            </div>
         </div>
-        <div class="service_item">
-            <img src="images/procuct_1_images/quality.png" />
-            <div>ASSURED QUALITY</div>
+        <div class="item_list">
+            <div class="headline">Shop By</div>
+            <div class="ftr_items">
+                <a href="">Men</a>
+                <a href="">Women</a>
+                <a href="">Kids</a>
+                <a href="">Indie</a>
+                <a href="">Stores</a>
+                <a href="">New Arrivals</a>
+                <a href="">Bramd Directory</a>
+                <a href="">Home</a>
+                <a href="">Collections</a>
+            </div>
+        </div>
+        <div class="item_list">
+            <div class="headline">Follow Us</div>
+            <div class="ftr_items">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">Terms & conditions</a>
+                <a href="">Twitter</a>
+                <a href="">Pinterest</a>
+            </div>
         </div>
     </div>
 
-    <div id="ftr_menu">
-        <div class="menu_item">
-            <div class="item_list">
-                <div class="headline">Ajio</div>
-                <div class="ftr_items">
-                    <a href="">Who we are</a>
-                    <a href="">Join our team</a>
-                    <a href="">Terms & conditions</a>
-                    <a href="">We respect your privacy</a>
-                    <a href="">Fee & Payments</a>
-                    <a href="">Return & Refunds policy</a>
-                    <a href="">Promotions Terms & Conditions</a>
-                </div>
+    <div id="payment">
+        <div id="payment_method">
+            <div class="pay_title">
+                <p>Payment Methods</p>
             </div>
-            <div class="item_list">
-                <div class="headline">Help</div>
-                <div class="ftr_items">
-                    <a href="">Track your order</a>
-                    <a href="">Frequently Asked Questions</a>
-                    <a href="">Returns</a>
-                    <a href="">Cancellations</a>
-                    <a href="">Payments</a>
-                    <a href="">Customer Care</a>
-                    <a href="">How Do I Redeem My Coupon</a>
+            <div class="pay_logo">
+                <div class="pay_img">
+                    <a href=""><img src="images/footer/net_banking.jpg" alt=""></a>
                 </div>
-            </div>
-            <div class="item_list">
-                <div class="headline">Shop By</div>
-                <div class="ftr_items">
-                    <a href="">Men</a>
-                    <a href="">Women</a>
-                    <a href="">Kids</a>
-                    <a href="">Indie</a>
-                    <a href="">Stores</a>
-                    <a href="">New Arrivals</a>
-                    <a href="">Bramd Directory</a>
-                    <a href="">Home</a>
-                    <a href="">Collections</a>
+                <div class="pay_img">
+                    <a href=""><img src="images/footer/visa.jpg" alt=""></a>
                 </div>
-            </div>
-            <div class="item_list">
-                <div class="headline">Follow Us</div>
-                <div class="ftr_items">
-                    <a href="">Facebook</a>
-                    <a href="">Instagram</a>
-                    <a href="">Terms & conditions</a>
-                    <a href="">Twitter</a>
-                    <a href="">Pinterest</a>
+                <div class="pay_img">
+                    <a href=""><img src="images/footer/master_card.jpg" alt=""></a>
+                </div>
+                <div class="pay_img">
+                    <a href=""><img src="images/footer/cash_on_delivery.jpg" alt=""></a>
+                </div>
+                <div class="pay_img">
+                    <a href=""><img src="images/footer/jio_money.jpg" alt=""></a>
                 </div>
             </div>
         </div>
-
-        <div id="payment">
-            <div id="payment_method">
-                <div class="pay_title">
-                    <h2>Payment Methods</h2>
-                </div>
-                <div class="pay_logo">
-                    <div class="pay_img">
-                        <a href=""><img src="images/procuct_1_images/net_banking.jpg" alt=""></a>
-                    </div>
-                    <div class="pay_img">
-                        <a href=""><img src="images/procuct_1_images/visa.jpg" alt=""></a>
-                    </div>
-                    <div class="pay_img">
-                        <a href=""><img src="images/procuct_1_images/master_card.jpg" alt=""></a>
-                    </div>
-                    <div class="pay_img">
-                        <a href=""><img src="images/procuct_1_images/cash_on_delivery.jpg" alt=""></a>
-                    </div>
-                    <div class="pay_img">
-                        <a href=""><img src="images/procuct_1_images/jio_money.jpg" alt=""></a>
-                    </div>
-                </div>
+        <div id="secure_payment">
+            <div class="pay_title">
+                <p>Secure Systems</p>
             </div>
-            <div id="secure_payment">
-                <div class="pay_title">
-                    <h2>Secure Systems</h2>
-                </div>
-                <div class="pay_img">
-                    <a href="">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV4SQxDaJwKocAqQvhysEPZfODrrQJCL1hCu-0YeiZoPbH73-skzePIuJjVtugGCHdEg&usqp=CAU"
-                            alt="">
-                    </a>
-                </div>
+            <div class="pay_img">
+                <a href="">
+                    <img class="ssl-img" src="images/footer/ssl.png"alt="">
+                </a>
             </div>
         </div>
     </div>
 </footer>
+<!--------------------- Footer end ------------------->
+</body>
 
 </html>
 

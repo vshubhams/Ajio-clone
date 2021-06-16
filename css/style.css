@@ -164,15 +164,6 @@ text-decoration: underline;
   margin-top: 4px;
 }
 
-
-/* .right-nav>div>input{
-  width: 63%;
-  height: 34px;
-  border-radius: 20px;
-  position: relative;
-  float: left;
-  border:solid 1px;
-} */
 .nav-icon-box{
  display: inline-block;
  text-align: center;
@@ -195,11 +186,6 @@ input{
   /* visibility: visible; */
   visibility: hidden;
   opacity: 0;
-  /* transition: .02s;
-  transition-property: visibility, opacity,linear;
-  transition-duration: 0.2s;
-  transition-timing-function: ease, linear;
-  transition-delay: 0.2s; */
   transition-property: visibility, opacity;
   transition-duration: 0.2s, 0.2s;
   transition-timing-function: ease-in-out, linear;
@@ -225,13 +211,6 @@ padding-right: 20px;
 color: #ccc;
 }
 
-/* .hover-menu-container>div>div:not(:first-child){
-  background-color: #F1F3F4;
-  height: 48px;
-  border-right: 3px solid #fff;
-  display: flex;
-  align-items: center;
-} */
 .cat-dropdown,.brands-dropdown{
   background-color: #f8f8f8;;
   height: 48px;
@@ -299,6 +278,7 @@ width: 300px;
 .brand-content{
   visibility: hidden;
 }
+
 
 /* --------------------------Main Container That's contain all item below header----------------- */
 .main-container{
@@ -602,6 +582,9 @@ footer {
   }
   footer{
       position: static;
+  }
+  .page-container{
+    position:static;
   }
 }
 

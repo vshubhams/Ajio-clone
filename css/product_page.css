@@ -5,15 +5,17 @@
 
 
 /* for complete page */
-
+.page-container{
+    top: 90px;
+    min-width: 1263px;
+    position: relative;
+}
 #page {
     display: flex;
-    /* border: 2px solid black; */
-    max-width: 90%;
     margin: auto;
-    top: 130px;
-    position: relative;
+    min-width: 1200px;
     margin-bottom: 50px;
+    padding: 20px;
 }
 
 
@@ -21,14 +23,13 @@
 
 #left_side {
     width: 20%;
-    min-width: 200px;
-    /* margin-top: 40px; */
+    min-width: 250px;
+    margin-top: 40px;
     color: #2f4254;
-    /* border: 2px dashed blue; */
 }
 
 #left_side>ul button {
-    /* content: "\2212"; */
+
     background-color: white;
     text-align: left;
     width: 100%;
@@ -59,8 +60,7 @@
 
 #right_side {
     width: 80%;
-    min-width: 40%;
-    /* border: 2px dashed blue; */
+    min-width: 950px;
 }
 
 #right_side h1 {
@@ -80,10 +80,8 @@
 
 #right_side>:nth-child(3) {
     display: flex;
-    min-width: 400px;
-    /* border: 2px solid brown; */
+    /* min-width: 950px; */
     background-color: rgba(249, 249, 249, 255);
-    /* height: 40px; */
     padding: 1%;
     margin: 5px 0px;
 }
@@ -98,22 +96,25 @@
 
 #right_side>:nth-child(3)>select {
     margin: 0px 10px;
+    padding: 4px;
+    font-size: 12px;
+    color: #666666;
+    font-weight: bold;
+    outline: none;
 }
 
 #product_box {
     display: grid;
-    width: 95%;
-    margin: 20px auto;
-    /* border: 2px solid black; */
-    gap: 0 2%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
 }
 
 #product_box>div {
-    height: 470px;
-    /* border: 2px solid brown; */
-    width: 100%;
-    min-width: 350px;
     cursor: pointer;
+    margin: 10px;
+}
+#product_box>div>img{
+width: 100%;
 }
 
 #product_box>div>div {
@@ -137,169 +138,4 @@
     color: #c4b398;
 }
 
-#product_box>div>img {
-    width: 330px;
-    height: 380px;
-    margin-left: 10px;
-}
 
-.box1 {
-    grid-area: b1;
-}
-
-.box2 {
-    grid-area: b2;
-}
-
-.box3 {
-    grid-area: b3;
-}
-
-.box4 {
-    grid-area: b4;
-}
-
-.box5 {
-    grid-area: b5;
-}
-
-.box6 {
-    grid-area: b6;
-}
-
-.box7 {
-    grid-area: b7;
-}
-
-.box8 {
-    grid-area: b8;
-}
-
-.box9 {
-    grid-area: b9;
-}
-
-.box10 {
-    grid-area: b10;
-}
-
-.box11 {
-    grid-area: b11;
-}
-
-.box12 {
-    grid-area: b12;
-}
-
-
-/* Small Screen */
-
-@media only screen and (max-width: 900px) {
-    #product_box {
-        grid-template: "b1" "b2" "b3" "b4" "b5" "b6" "b7" "b8" "b9" "b10" "b11" "b12";
-    }
-    #product_box>div>img {
-        margin-left: 10vw;
-    }
-}
-
-
-/* Medium Screen */
-
-@media only screen and (min-width: 900px) {
-    #product_box {
-        grid-template-areas: "b1 b2" "b3 b4" "b5 b6" "b7 b8" "b9 b10" "b11 b12";
-    }
-}
-
-
-/* Small Screen */
-
-@media only screen and (min-width: 1200px) {
-    #product_box {
-        grid-template-areas: "b1 b2 b3" "b4 b5 b6" "b7 b8 b9" "b10 b11 b12";
-    }
-}
-
-
-/* footer */
-
-footer {
-    background-color: #2c4152;
-    margin: 0px;
-    padding: 0px;
-}
-
-#service {
-    width: 98vw;
-    height: 150px;
-    background-color: #f8f8f8;
-}
-
-#ftr_menu {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.menu_item {
-    margin: 40px 0px 40px 0px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: #bfc8cb;
-    border-bottom: 1px solid white;
-}
-
-.item_list {
-    display: flex;
-    flex-direction: column;
-}
-
-.ftr_items {
-    display: flex;
-    flex-direction: column;
-}
-
-.headline {
-    margin: 40px 0px 40px 0px;
-    font-size: 20px;
-}
-
-.ftr_items>a {
-    text-decoration: none;
-    margin: 7px 0px 7px 0px;
-    color: #bfc8cb;
-    font-size: 14px;
-}
-
-#payment {
-    display: flex;
-    padding-bottom: 40px;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.pay_img {
-    width: 120px;
-    height: 40px;
-    margin: 15px;
-}
-
-.pay_img>a>img {
-    width: 100%;
-    height: 100%;
-}
-
-.pay_logo {
-    display: flex;
-    flex-direction: row;
-}
-
-.pay_title {
-    font-size: 12px;
-    color: #bfc8cb;
-    margin-left: 14px;
-}

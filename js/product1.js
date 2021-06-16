@@ -95,8 +95,9 @@ function show_item() {
     // let data = JSON.parse(localStorage.getItem('current-product'));
 
     let product = JSON.parse(localStorage.getItem('products'));
-
+    
     let data = product[product.length - 1];
+    console.log(data)
     
     let add_to_bag = document.getElementsByClassName('add_to_bag');
     add_to_bag[0].setAttribute('id', `p${product.length - 1}`);
