@@ -24,8 +24,6 @@ function open1() {
     let blur = document.getElementById('container');
 
     pop.style.display = "inline";
-
-    
 }
 
 function cart_items_display() {

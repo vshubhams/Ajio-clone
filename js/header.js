@@ -9,19 +9,6 @@ function hideMenu(id) {
     menuContainer.style.visibility = "hidden"
     menuContainer.style.opacity="0"
 }
-// -------------------------Carousel start------------------
-var counter = 1;
-setInterval(function () {
-    document.getElementById('p' + counter).checked = true;
-    document.getElementById('r' + counter).checked = true;
-    document.getElementById('q' + counter).checked = true;
-    document.getElementById('s' + counter).checked = true;
-    counter++;
-    if (counter > 5) {
-        counter = 1;
-    }
-}, 2500);
-// -------------------------Carousel End------------------
 
 //-----------------For setting login status true or false start--------------------
 let loginUser = JSON.parse(localStorage.getItem('status'))
@@ -50,7 +37,7 @@ function signOut(){
     let singout=document.getElementById('signout');
     singout.style.display='none'
     statusFalse()
-    window.location.href='index.html'
+    window.location.reload()
 }
 function statusFalse(){
     let x = JSON.parse(localStorage.getItem('status'));
@@ -85,7 +72,7 @@ let signInContainer= document.querySelector('.sign-in-container')
 function hideBox(){
     signInContainer.style.display='none'
     document.body.style.overflow='auto'
-    window.location.href='index.html'
+    window.location.reload()
 }
 
 function showBox(){
@@ -160,7 +147,7 @@ function goToSignUP(){
         warning.innerHTML='SignUp Successfully'
         setTimeout(function(){
             statusTrue(name)
-            window.location.href='index.html'
+            window.location.reload()
             hideBox()
         },2000)
         
@@ -203,7 +190,7 @@ function login(number){
                 setTimeout(function(){
                     statusTrue(el.name)
                     hideBox()
-                    window.location.href='index.html'
+                    window.location.reload()
                 },1000)
                 bool = false;
                 return
