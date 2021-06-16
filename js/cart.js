@@ -1,29 +1,10 @@
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-//Sign-in functionality
-
-function close1() {
-    let pop = document.getElementById('sign-in');
-    pop.style.display = "none";
-
-}
-
 function open1() {
-    let pop = document.getElementById('sign-in');
-    let blur = document.getElementById('container');
-
-    pop.style.display = "inline";
+  let loginUser = JSON.parse(localStorage.getItem('status'));
+  if(loginUser[0].login==true){
+    window.location.href='cart_details.html'
+  }else{
+    showBox()
+  }
 }
 
 function cart_items_display() {

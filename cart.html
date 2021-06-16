@@ -12,19 +12,37 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
-<header id="myHeader">
-    <div id="cart-header">
-        <img src="images/cart_images/Ajio-Logo.svg">
-        <div id="signin-signup"><span id="sign-in-header" onclick="open1()">Sign In / Join
-                Ajio</span><span>&nbsp&nbsp&nbsp&nbsp</span>
-            <span id="customer-care"> Customer
-                care</span>
-        </div>
-    </div>
-</header>
 
 <body>
+    <div class="header-container">
+        <header>
+            <div class="signin-customer-care">
+                <ul>
+                    <li>
+                        <a href="#" id="username"></a>
+                     </li>
+                    <li onclick="showBox()">
+                        <p id="signin" >Sign In / Join AJIO</p>
+                     </li>
+                    <li onclick="signOut()">
+                        <p id="signout" >Sign Out</p>
+                     </li>
+                    <li>
+                        <a href="#">Customer Care</a>
+                     </li>
+                 </ul>
+            </div>
+            <div class="logo-box">
+                <a href="#">
+                    <img class="logo-img" src="images/Ajio-Logo.svg" alt="">
+                </a>
+            </div>
 
+            <div class="nav">
+                <img src="images/header/first.PNG" alt="">
+            </div>
+        </header>
+    </div>
 
     <!--------------SignIn box start ---------->
     <div class="sign-in-container">
@@ -301,3 +319,4 @@
 </html>
 
 <script src="js/cart.js"></script>
+<script src="js/header.js"></script>
