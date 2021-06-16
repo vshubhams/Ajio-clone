@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cart Details</title>
+    <link rel="stylesheet" href="css/cart_details.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header starts here -->
+    <header id="myHeader">
+        <div id="cart-header">
+            <img src="images/cart_images/Ajio-Logo.svg">
+            <div id="bag_details">
+                <div><i class="fas fa-shopping-bag"></i></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="signin-signup">
+                <span id="sign-in-header">Hi! Pallav Jain</span>
+                <span>&nbsp&nbsp&nbsp&nbsp</span>
+                <span id="customer-care"> Customer care</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header ends here -->
+    <!-- main body container starts -->
+
+    <div class="main-container">
+        <div class="del-address">
+            <div class="address-show">
+                <img src="images/cart_images/placeholder.png" alt="">
+                <div>
+                    <div>Delivery Address</div>
+                    <div>We will deliver your order to this address</div>
+                </div>
+            </div>
+            <div id="new_address"></div>
+            <button id="add-new-address">Add New Address</button>
+        </div>
+        <div class="total-bill">
+            <div class="bill">
+                <div>Order Details</div>
+                <div class="bag-total bill-card">
+                    <div>Bag Total</div>
+                    <div id="bag-item-amount">Rs. 950</div>
+                </div>
+                <div class="bag-delivery bill-card">
+                    <div>Delivery</div>
+                    <div id="bag-delivery-amount">FREE</div>
+                </div>
+                <div class="bag-total bill-card">
+                    <div>Total Amount</div>
+                    <div id="bag-total-amount">Rs. 950</div>
+                </div>
+                <button id="proceed-to-ship">PROCEED TO PAYMENT</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- main body container ends -->
+
+    <!-- Address add/update pop up starts -->
+
+    <div class="change_address">
+        <div class="container">
+            <h1 id="close">+</h1>
+            <h3>Add new address</h3>
+            <form>
+                <div class="inputbox">
+                    <input id="input1" type="text" autocomplete="off" required>
+                    <label>Name*</label>
+                </div>
+                <div class="inputbox">
+                    <input id="input2" type="text" autocomplete="off" required>
+                    <label>Mobile*</label>
+                </div>
+                <div class="inputbox">
+                    <input id="input3" type="text" autocomplete="off" required>
+                    <label>Pincode*</label>
+                </div>
+                <div class="inputbox">
+                    <input id="input4" type="text" autocomplete="off" required>
+                    <label>Locality / Area / Street*</label>
+                </div>
+                <div class="inputbox">
+                    <input id="input5" type="text" autocomplete="off" required>
+                    <label>Flat Number / Building Name*</label>
+                </div>
+                <div class="inputbox">
+                    <input id="input6" type="text" autocomplete="off" required>
+                    <label>Landmark</label>
+                </div>
+                <div class="inputbox">
+                    <input id="input7" type="text" autocomplete="off" required>
+                    <label>District / City*</label>
+                </div>
+                <div class="inputbox">
+                    <input id="input8" type="text" autocomplete="off" required>
+                    <label>State*</label>
+                </div>
+                <div>
+                    <h4>Address Type</h4>
+                    <div>
+                        <input type="radio"> Home
+                        <input type="radio"> Work
+                        <input type="radio"> Others
+                    </div>
+                    <div>
+                        <input type="checkbox"> Make as default Address
+                    </div>
+                </div>
+            </form>
+            <div>
+                <button id="button">Submit</button>
+                <button>Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Address add/update pop up ends -->
+</body>
+
+<footer>
+    <div class="bottom-bar">
+        <div class="bottom-bar-info">
+            <img src="images/cart_images/secure-payment.png" alt="">
+            <div>SECURE PAYMENTS</div>
+        </div>
+        <div class="bottom-bar-info">
+            <img src="images/cart_images/rupee.png" alt="">
+            <div>CASH ON DELIVERY</div>
+        </div>
+        <div class="bottom-bar-info">
+            <img src="images/cart_images/quality.png" alt="">
+            <div>ASSURED QUALITY</div>
+        </div>
+        <div class="bottom-bar-info">
+            <img src="images/cart_images/return.png" alt="">
+            <div>EASY RETURNS</div>
+        </div>
+    </div>
+</footer>
+
+</html>
+<script>
+    var btn = document.getElementById("add-new-address").addEventListener('click', function() {
+        document.querySelector('.change_address').style.display = 'flex'
+    })
+
+    document.querySelector('#close').addEventListener('click', function() {
+        document.querySelector('.change_address').style.display = 'none'
+    })
+
+    var button = document.getElementById('button')
+    var new_address = document.getElementById('new_address')
+    var id = 0
+
+    function taking_input() {
+        var name = document.getElementById('input1').value
+        var mobile = document.getElementById('input2').value
+        var pincode = document.getElementById('input3').value
+        var locality = document.getElementById('input4').value
+        var flat = document.getElementById('input5').value
+        var landmark = document.getElementById('input6').value
+        var city = document.getElementById('input7').value
+        var state = document.getElementById('input8').value
+        id++
+        var div = document.createElement('div')
+        div.setAttribute('class', 'address_grid')
+        div.innerHTML =
+            `<h4>${name}</h4>
+            <p>${locality}, ${flat},</p>
+            <p>${landmark},</p>
+            <p>${city}, ${state},</p>
+            <p>India - ${pincode}</p>
+            <h5>Phone : ${state}</h5>`
+
+        if (id <= 6) {
+            new_address.appendChild(div)
+        }
+
+    }
+    button.addEventListener('click', taking_input)
+</script>
