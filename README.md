@@ -9,4 +9,4 @@ Aaditya Kumar(nj2_003),  Shubham(nj2_118),  Pallav jain(nj2_151)
 ### Pages Designed:
 Landing page, All product page ,Product details page, Cart page, Cart Detail page, Payment page, Order Complete page
 #### Tech library used:
-No external library used in this project.
+No external library is used in this project.
