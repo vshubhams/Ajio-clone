@@ -20,17 +20,17 @@
                 <ul>
                     <li>
                         <a href="#" id="username"></a>
-                     </li>
+                    </li>
                     <li onclick="showBox()">
-                        <p id="signin" >Sign In / Join AJIO</p>
-                     </li>
+                        <p id="signin">Sign In / Join AJIO</p>
+                    </li>
                     <li onclick="signOut()">
-                        <p id="signout" >Sign Out</p>
-                     </li>
+                        <p id="signout">Sign Out</p>
+                    </li>
                     <li>
                         <a href="#">Customer Care</a>
-                     </li>
-                 </ul>
+                    </li>
+                </ul>
             </div>
             <div class="logo-box">
                 <a href="#">
@@ -47,10 +47,10 @@
     <!--------------SignIn box start ---------->
     <div class="sign-in-container">
         <div class="sign-in-box">
-        
-            <div onclick="hideBox()" class="close" >X</div>
-    
-    
+
+            <div onclick="hideBox()" class="close">X</div>
+
+
             <h2 class="box-heading top">Welocome to AJIO</h2>
             <h3 class="box-heading join">Join/Sign In using</h3>
             <div class="link-box">
@@ -61,29 +61,30 @@
             <div class="line left"></div>
             <div class="line right"></div>
             <h3 class="box-heading small" id="inputHeading">Enter Mobile Number*</h3>
-            
+
             <p id="warning"></p>
             <input type="text" id="number"><br>
-            <div class="hide input-container" id="inputCont" >
+            <div class="hide input-container" id="inputCont">
                 <div class="radioBox" id="radioBox">Gender:
                     <label>
-                        <input type="radio" name="radio-button" value="no"/>
+                        <input type="radio" name="radio-button" value="no" />
                         <span>Female</span>
-                      </label>
-                    
-                      <label>
+                    </label>
+
+                    <label>
                         <input type="radio" name="radio-button" value="no" />
                         <span>Male</span>
-                      </label>
+                    </label>
                 </div>
                 <input type="text" id="name" placeholder="Name"><br>
                 <input type="text" id="email" placeholder="Email"><br>
                 <input type="password" id="password" placeholder="Password">
             </div>
             <button onclick="goToSignUP()" class="continue" id="continueBtn">CONTINUE</button>
-            <h3 class="box-heading lite">By Signing in, I agree to <span class="blue-span">Term and Conditions.</span></h3>
+            <h3 class="box-heading lite">By Signing in, I agree to <span class="blue-span">Term and Conditions.</span>
+            </h3>
         </div>
-        </div>
+    </div>
     <!--------------SignIn box end ------------>
     <!-- Quantity popup starts -->
 
@@ -172,7 +173,7 @@
                     <div>Total Amount</div>
                     <div id="bag-total-amount">Rs. 950</div>
                 </div>
-                <button id="proceed-to-ship" onclick="open1()">PROCEED TO SHIPPING</button>
+                <button id="proceed-to-ship" onclick="go_to_shipping()">PROCEED TO SHIPPING</button>
             </div>
             <div id="coupon">
                 <div class="coupon-info">Apply Coupon</div>
@@ -226,94 +227,94 @@
     </div>
     <!---------------------- Footer start ----------------->
     <footer>
-    <div><img style="min-width:1263px; width: 100%;" src="images/stripe/above-footer.png" alt=""></div>
-    <div class="menu_item">
-        <div class="item_list">
-            <div class="headline">Ajio</div>
-            <div class="ftr_items">
-                <a href="">Who we are</a>
-                <a href="">Join our team</a>
-                <a href="">Terms & conditions</a>
-                <a href="">We respect your privacy</a>
-                <a href="">Fee & Payments</a>
-                <a href="">Return & Refunds policy</a>
-                <a href="">Promotions Terms & Conditions</a>
+        <div><img style="min-width:1263px; width: 100%;" src="images/stripe/above-footer.png" alt=""></div>
+        <div class="menu_item">
+            <div class="item_list">
+                <div class="headline">Ajio</div>
+                <div class="ftr_items">
+                    <a href="">Who we are</a>
+                    <a href="">Join our team</a>
+                    <a href="">Terms & conditions</a>
+                    <a href="">We respect your privacy</a>
+                    <a href="">Fee & Payments</a>
+                    <a href="">Return & Refunds policy</a>
+                    <a href="">Promotions Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="headline">Help</div>
+                <div class="ftr_items">
+                    <a href="">Track your order</a>
+                    <a href="">Frequently Asked Questions</a>
+                    <a href="">Returns</a>
+                    <a href="">Cancellations</a>
+                    <a href="">Payments</a>
+                    <a href="">Customer Care</a>
+                    <a href="">How Do I Redeem My Coupon</a>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="headline">Shop By</div>
+                <div class="ftr_items">
+                    <a href="">Men</a>
+                    <a href="">Women</a>
+                    <a href="">Kids</a>
+                    <a href="">Indie</a>
+                    <a href="">Stores</a>
+                    <a href="">New Arrivals</a>
+                    <a href="">Bramd Directory</a>
+                    <a href="">Home</a>
+                    <a href="">Collections</a>
+                </div>
+            </div>
+            <div class="item_list">
+                <div class="headline">Follow Us</div>
+                <div class="ftr_items">
+                    <a href="">Facebook</a>
+                    <a href="">Instagram</a>
+                    <a href="">Terms & conditions</a>
+                    <a href="">Twitter</a>
+                    <a href="">Pinterest</a>
+                </div>
             </div>
         </div>
-        <div class="item_list">
-            <div class="headline">Help</div>
-            <div class="ftr_items">
-                <a href="">Track your order</a>
-                <a href="">Frequently Asked Questions</a>
-                <a href="">Returns</a>
-                <a href="">Cancellations</a>
-                <a href="">Payments</a>
-                <a href="">Customer Care</a>
-                <a href="">How Do I Redeem My Coupon</a>
-            </div>
-        </div>
-        <div class="item_list">
-            <div class="headline">Shop By</div>
-            <div class="ftr_items">
-                <a href="">Men</a>
-                <a href="">Women</a>
-                <a href="">Kids</a>
-                <a href="">Indie</a>
-                <a href="">Stores</a>
-                <a href="">New Arrivals</a>
-                <a href="">Bramd Directory</a>
-                <a href="">Home</a>
-                <a href="">Collections</a>
-            </div>
-        </div>
-        <div class="item_list">
-            <div class="headline">Follow Us</div>
-            <div class="ftr_items">
-                <a href="">Facebook</a>
-                <a href="">Instagram</a>
-                <a href="">Terms & conditions</a>
-                <a href="">Twitter</a>
-                <a href="">Pinterest</a>
-            </div>
-        </div>
-    </div>
 
-    <div id="payment">
-        <div id="payment_method">
-            <div class="pay_title">
-                <p>Payment Methods</p>
+        <div id="payment">
+            <div id="payment_method">
+                <div class="pay_title">
+                    <p>Payment Methods</p>
+                </div>
+                <div class="pay_logo">
+                    <div class="pay_img">
+                        <a href=""><img src="images/footer/net_banking.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/footer/visa.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/footer/master_card.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/footer/cash_on_delivery.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/footer/jio_money.jpg" alt=""></a>
+                    </div>
+                </div>
             </div>
-            <div class="pay_logo">
-                <div class="pay_img">
-                    <a href=""><img src="images/footer/net_banking.jpg" alt=""></a>
+            <div id="secure_payment">
+                <div class="pay_title">
+                    <p>Secure Systems</p>
                 </div>
                 <div class="pay_img">
-                    <a href=""><img src="images/footer/visa.jpg" alt=""></a>
-                </div>
-                <div class="pay_img">
-                    <a href=""><img src="images/footer/master_card.jpg" alt=""></a>
-                </div>
-                <div class="pay_img">
-                    <a href=""><img src="images/footer/cash_on_delivery.jpg" alt=""></a>
-                </div>
-                <div class="pay_img">
-                    <a href=""><img src="images/footer/jio_money.jpg" alt=""></a>
+                    <a href="">
+                        <img class="ssl-img" src="images/footer/ssl.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
-        <div id="secure_payment">
-            <div class="pay_title">
-                <p>Secure Systems</p>
-            </div>
-            <div class="pay_img">
-                <a href="">
-                    <img class="ssl-img" src="images/footer/ssl.png"alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
-<!--------------------- Footer end ------------------->
+    </footer>
+    <!--------------------- Footer end ------------------->
 </body>
 
 </html>

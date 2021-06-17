@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,12 @@
     <title>Payment</title>
     <link rel="stylesheet" href="css/payment.css">
 </head>
+
 <body>
     <div class="header-container">
         <header>
             <div class="logo-box">
-                    <img class="logo-img" src="images/Ajio-Logo.svg" alt="">
+                <img class="logo-img" src="images/Ajio-Logo.svg" alt="">
             </div>
 
             <div class="nav">
@@ -24,10 +26,10 @@
     <!--------------SignIn box start ---------->
     <div class="sign-in-container">
         <div class="sign-in-box">
-        
-            <div onclick="hideBox()" class="close" >X</div>
-    
-    
+
+            <div onclick="hideBox()" class="close">X</div>
+
+
             <h2 class="box-heading top">Welocome to AJIO</h2>
             <h3 class="box-heading join">Join/Sign In using</h3>
             <div class="link-box">
@@ -38,207 +40,270 @@
             <div class="line left"></div>
             <div class="line right"></div>
             <h3 class="box-heading small" id="inputHeading">Enter Mobile Number*</h3>
-            
+
             <p id="warning"></p>
             <input type="text" id="number"><br>
-            <div class="hide input-container" id="inputCont" >
+            <div class="hide input-container" id="inputCont">
                 <div class="radioBox" id="radioBox">Gender:
                     <label>
-                        <input type="radio" name="radio-button" value="no"/>
+                        <input type="radio" name="radio-button" value="no" />
                         <span>Female</span>
-                      </label>
-                    
-                      <label>
+                    </label>
+
+                    <label>
                         <input type="radio" name="radio-button" value="no" />
                         <span>Male</span>
-                      </label>
+                    </label>
                 </div>
                 <input type="text" id="name" placeholder="Name"><br>
                 <input type="text" id="email" placeholder="Email"><br>
                 <input type="password" id="password" placeholder="Password">
             </div>
             <button onclick="goToSignUP()" class="continue" id="continueBtn">CONTINUE</button>
-            <h3 class="box-heading lite">By Signing in, I agree to <span class="blue-span">Term and Conditions.</span></h3>
+            <h3 class="box-heading lite">By Signing in, I agree to <span class="blue-span">Term and Conditions.</span>
+            </h3>
         </div>
-        </div>
+    </div>
     <!--------------SignIn box end ------------>
     <div class="container">
-<!-- --------------------------RIGTH---------------------->
-<div class="right">
-    <!------------------------DISCOUNT-CONTAINER------------->
-       <div class="discount-container">
-           <div class="discount-box-1">
-               <img src="https://assets.ajio.com/medias/sys_master/root/h83/hcb/32873406431262/71x21.jpg" alt="">
-               <p>Get instant discount of 10 Percent up to Rs 2000 on a minimum transaction value of Rs 4000 using Citi cards <span>T&C</span></p>
-           </div>
-           <div class="discount-box-2">
-               <img src="https://assets.ajio.com/medias/sys_master/root/h7b/h20/32884357529630/71x21.jpg" alt="">
-               <p>Get 5% Instant Cashback on all Credit and Debit Cards <span>T&C</span></p>
-           </div>
-       </div>
-    <!------------------------DISCOUNT-CONTAINER-END------------->
+        <!-- --------------------------RIGTH---------------------->
+        <div class="right">
+            <!------------------------DISCOUNT-CONTAINER------------->
+            <div class="discount-container">
+                <div class="discount-box-1">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/h83/hcb/32873406431262/71x21.jpg" alt="">
+                    <p>Get instant discount of 10 Percent up to Rs 2000 on a minimum transaction value of Rs 4000 using
+                        Citi cards <span>T&C</span></p>
+                </div>
+                <div class="discount-box-2">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/h7b/h20/32884357529630/71x21.jpg" alt="">
+                    <p>Get 5% Instant Cashback on all Credit and Debit Cards <span>T&C</span></p>
+                </div>
+            </div>
+            <!------------------------DISCOUNT-CONTAINER-END------------->
             <div class="view-expansion">View 3 More</div>
-            
+
             <!-- -------------------PAYMENTBOX-------------------->
             <div class="payment-heading">Select Payment Mode</div>
 
             <div class="payment-container">
                 <div class="payment-box-1">
-                    <div id="box1" class="box selected-tab" onclick="showMethod('box1','credit')"> Credit/ Debit Card </div>
+                    <div id="box1" class="box selected-tab" onclick="showMethod('box1','credit')"> Credit/ Debit Card
+                    </div>
                     <div id="box2" class="box" onclick="showMethod('box2','net-banking')"> NetBanking </div>
                     <div id="box3" class="box" onclick="showMethod('box3','wallet')"> Wallet </div>
                     <div id="box4" class="box" onclick="showMethod('box4','upi')"> UPI </div>
-                    <div id="box5" class="box" onclick="showMethod('box5','cashOnDelivery')"> Cash on Delivery  </div>
+                    <div id="box5" class="box" onclick="showMethod('box5','cashOnDelivery')"> Cash on Delivery </div>
                 </div>
 
 
                 <div id="credit" class="payment-box-2 credit selected-box">
-                     <div class="pay-head">Add New Card</div>
-                     <div class="pay-sub-head">Card Number</div>
-                     <div> <input class="payment-box-input" type=""></div>
-                     <div class="pay-sub-head">Name on Card</div>
-                     <div><input class="payment-box-input" type="text"></div>
-                     <div> <div class="pay-sub-head">Expiration Date</div> <div class="pay-sub-head">CVV <span>(What's This?)</span></div></div>
-
-                     <div>
-                          <div><select >
-                            <option > Month</option>
-                            <option >Jan (1)</otion>
-                            <option >Feb (2)</option>
-                            <option >Mar (3)</option>
-                            <option >Apr (4)</option>
-                            <option >May (5)</option>
-                            <option >june (6)</option>
-                            <option >july (7)</option>
-                            <option >Aug (8)</option>
-                            <option >Sept (9)</option>
-                            <option >Oct (10)</option>
-                            <option >Nov (11)</option>
-                            <option >Dec (12)</option>
-                          </select></div>
-
-                          <div><select name="year" id="year">
-                            <option value="2021">Year</option>
-                            <option value="2021">2021</option>
-                            <option value="2022">2022</option>
-                            <option value="2023">2023</option>
-                            <option value="2024">2024</option>
-                            <option value="2021">2025</option>
-                            <option value="2022">2026</option>
-                            <option value="2023">2027</option>
-                            <option value="2024">2028</option>
-                            <option value="2024">2029</option>
-                            <option value="2024">2030</option>
-                          </select></div>
-
-                          <div>
-                              <input type="text">
-                          </div>
+                    <div class="pay-head">Add New Card</div>
+                    <div class="pay-sub-head">Card Number</div>
+                    <div> <input class="payment-box-input" type=""></div>
+                    <div class="pay-sub-head">Name on Card</div>
+                    <div><input class="payment-box-input" type="text"></div>
+                    <div>
+                        <div class="pay-sub-head">Expiration Date</div>
+                        <div class="pay-sub-head">CVV <span>(What's This?)</span></div>
                     </div>
 
-                     <div class="credit-checkbox-input"> <input  type="checkbox" value="true" checked="">Save this UPI ID for faster checkout</div>
-                     
-                     <div> <button onclick="placeOrder()" class="btn-payment">PAY SECURELY</button></div>
-                     <div class="pay-head-bottom">By placing this order, you agree to AJIO's T&C</div>
-                   
+                    <div>
+                        <div><select>
+                                <option> Month</option>
+                                <option>Jan (1)</otion>
+                                <option>Feb (2)</option>
+                                <option>Mar (3)</option>
+                                <option>Apr (4)</option>
+                                <option>May (5)</option>
+                                <option>june (6)</option>
+                                <option>july (7)</option>
+                                <option>Aug (8)</option>
+                                <option>Sept (9)</option>
+                                <option>Oct (10)</option>
+                                <option>Nov (11)</option>
+                                <option>Dec (12)</option>
+                            </select></div>
+
+                        <div><select name="year" id="year">
+                                <option value="2021">Year</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2021">2025</option>
+                                <option value="2022">2026</option>
+                                <option value="2023">2027</option>
+                                <option value="2024">2028</option>
+                                <option value="2024">2029</option>
+                                <option value="2024">2030</option>
+                            </select></div>
+
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="credit-checkbox-input"> <input type="checkbox" value="true" checked="">Save this UPI ID
+                        for faster checkout</div>
+
+                    <div> <button onclick="placeOrder()" class="btn-payment">PAY SECURELY</button></div>
+                    <div class="pay-head-bottom">By placing this order, you agree to AJIO's T&C</div>
+
                 </div>
 
                 <div id="net-banking" class="payment-box-2 net-banking ">
-                     <div class="pay-head">Select Bank</div>
+                    <div class="pay-head">Select Bank</div>
 
-                     <div class="pay-img-container">
-                           <div class="pay-col"> <div> <img src="https://assets.ajio.com/static/peImages/HDFC.png" alt=""> </div> <div> HDFC </div> </div>
-                           <div class="pay-col"> <div> <img src="https://assets.ajio.com/static/peImages/SBI.png" alt=""> </div> <div> SBI </div> </div>
-                           <div class="pay-col"> <div> <img src="https://assets.ajio.com/static/peImages/ICICI.png" alt=""> </div> <div> ICICI </div> </div>
-                           <div class="pay-col"> <div> <img src="https://assets.ajio.com/static/peImages/Axis.png" alt=""> </div> <div> Axis Bank </div> </div>
-                           <div class="pay-col"> <div> <img src="https://assets.ajio.com/static/peImages/Kotak-Bank.png" alt=""> </div> <div> Kotak Bank </div> </div>
-                     </div>
+                    <div class="pay-img-container">
+                        <div class="pay-col">
+                            <div> <img src="https://assets.ajio.com/static/peImages/HDFC.png" alt=""> </div>
+                            <div> HDFC </div>
+                        </div>
+                        <div class="pay-col">
+                            <div> <img src="https://assets.ajio.com/static/peImages/SBI.png" alt=""> </div>
+                            <div> SBI </div>
+                        </div>
+                        <div class="pay-col">
+                            <div> <img src="https://assets.ajio.com/static/peImages/ICICI.png" alt=""> </div>
+                            <div> ICICI </div>
+                        </div>
+                        <div class="pay-col">
+                            <div> <img src="https://assets.ajio.com/static/peImages/Axis.png" alt=""> </div>
+                            <div> Axis Bank </div>
+                        </div>
+                        <div class="pay-col">
+                            <div> <img src="https://assets.ajio.com/static/peImages/Kotak-Bank.png" alt=""> </div>
+                            <div> Kotak Bank </div>
+                        </div>
+                    </div>
 
-                     <div class="view-expansion">View More Banks</div>
-                     <div><Button onclick="placeOrder()" class="btn-payment">PAY SECURELY</Button></div>
-                     <div class="pay-head-bottom"> By placing this order, you agree to AJIO's T&C</div>
+                    <div class="view-expansion">View More Banks</div>
+                    <div><Button onclick="placeOrder()" class="btn-payment">PAY SECURELY</Button></div>
+                    <div class="pay-head-bottom"> By placing this order, you agree to AJIO's T&C</div>
                 </div>
 
                 <div id="wallet" class="payment-box-2 wallet ">
-                     <div class="pay-head">Select Wallet</div>
-                     <div class="pay-img-container">
-                           <div class="pay-col"><div><img src="https://assets.ajio.com/static/peImages/Paytm.png" alt=""></div> <div>Paytm</div></div>
-                           <div class="pay-col"><div><img src="https://assets.ajio.com/static/peImages/Phone-pe.png" alt=""></div> <div>PhonePe</div></div>
-                           <div class="pay-col"><div><img src="https://assets.ajio.com/static/peImages/Jio-Money.png" alt=""></div> <div>Jio Money</div></div>
-                           <div class="pay-col"><div><img src="https://assets.ajio.com/static/peImages/Mobikwik.png" alt=""></div> <div>MOBIKWIK</div></div>
-                     </div>
-                     <div class="view-expansion">View More Banks</div>
-                     <div><Button onclick="placeOrder()"class="btn-payment">PAY SECURELY</Button></div>
-                     <div class="pay-head-bottom"> By placing this order, you agree to AJIO's T&C</div>
+                    <div class="pay-head">Select Wallet</div>
+                    <div class="pay-img-container">
+                        <div class="pay-col">
+                            <div><img src="https://assets.ajio.com/static/peImages/Paytm.png" alt=""></div>
+                            <div>Paytm</div>
+                        </div>
+                        <div class="pay-col">
+                            <div><img src="https://assets.ajio.com/static/peImages/Phone-pe.png" alt=""></div>
+                            <div>PhonePe</div>
+                        </div>
+                        <div class="pay-col">
+                            <div><img src="https://assets.ajio.com/static/peImages/Jio-Money.png" alt=""></div>
+                            <div>Jio Money</div>
+                        </div>
+                        <div class="pay-col">
+                            <div><img src="https://assets.ajio.com/static/peImages/Mobikwik.png" alt=""></div>
+                            <div>MOBIKWIK</div>
+                        </div>
+                    </div>
+                    <div class="view-expansion">View More Banks</div>
+                    <div><Button onclick="placeOrder()" class="btn-payment">PAY SECURELY</Button></div>
+                    <div class="pay-head-bottom"> By placing this order, you agree to AJIO's T&C</div>
                 </div>
 
                 <div id="upi" class="payment-box-2 upi ">
-                     <div class="pay-head">Enter your UPI ID</div>
+                    <div class="pay-head">Enter your UPI ID</div>
 
-                     <div class="pay-sub-head">Pay instantly from your bank using your UPI ID.<span class="view-expansion">How to find UPI ID?</span></div>
+                    <div class="pay-sub-head">Pay instantly from your bank using your UPI ID.<span
+                            class="view-expansion">How to find UPI ID?</span></div>
 
-                     <div> <input class="payment-box-input" type="text" placeholder="12345670@upi"></div>
+                    <div> <input class="payment-box-input" type="text" placeholder="12345670@upi"></div>
 
-                     <div class="credit-checkbox-input" > <input  type="checkbox"value="true" checked="">Save this UPI ID for faster checkout</div>
+                    <div class="credit-checkbox-input"> <input type="checkbox" value="true" checked="">Save this UPI ID
+                        for faster checkout</div>
 
-                     <div><button onclick="placeOrder()" class="btn-payment">PAY SECURELY</button></div>
+                    <div><button onclick="placeOrder()" class="btn-payment">PAY SECURELY</button></div>
 
-                     <div class="pay-head-bottom"> By placing this order, you agree to AJIO's T&C</div>
+                    <div class="pay-head-bottom"> By placing this order, you agree to AJIO's T&C</div>
                 </div>
 
                 <div id="cashOnDelivery" class="payment-box-2 cash-on-delivery ">
                     <div class="pay-head">Cash on Delivery</div>
                     <div> For safe, contactless and hassle free delivery, pay using card/wallet/netbanking</div>
                     <div><button onclick="placeOrder()" class="btn-payment">PLACE ORDER</button></div>
-                    <div class="pay-head-bottom"> By placing this order, you agree to AJIO's <span class="view-expansion">T&C </span> </div>
-               </div>
+                    <div class="pay-head-bottom"> By placing this order, you agree to AJIO's <span
+                            class="view-expansion">T&C </span> </div>
+                </div>
 
             </div>
-            </div>
+        </div>
 
 
 
 
-<!-- -------------------------RIGTH-END-------------------->
-        <div class="left"></div>
-</div>
-<footer>
-    <div><img style="min-width:1263px; width: 100%;" src="images/stripe/above-footer.png" alt=""></div>
-    <div id="payment">
-        <div id="payment_method">
-            <div class="pay_title">
-                <p>Payment Methods</p>
-            </div>
-            <div class="pay_logo">
-                <div class="pay_img">
-                    <a href=""><img src="images/footer/net_banking.jpg" alt=""></a>
+        <!-- -------------------------RIGTH-END-------------------->
+
+        <!----------------------- LEFT  ------------------------>
+
+        <div class="left">
+            <div class="order-summary">
+                <div>Order Summary</div>
+                <div class="summary-amount">
+                    <div>Bag Total</div>
+                    <div id="summary-bag-total">Rs. 950</div>
                 </div>
-                <div class="pay_img">
-                    <a href=""><img src="images/footer/visa.jpg" alt=""></a>
+                <div class="summary-amount">
+                    <div>Delivery</div>
+                    <div id="summary-delivery">FREE</div>
                 </div>
-                <div class="pay_img">
-                    <a href=""><img src="images/footer/master_card.jpg" alt=""></a>
+                <div class="summary-amount strong">
+                    <div>Order Total</div>
+                    <div id="summary-total">Rs. 950</div>
                 </div>
-                <div class="pay_img">
-                    <a href=""><img src="images/footer/cash_on_delivery.jpg" alt=""></a>
-                </div>
-                <div class="pay_img">
-                    <a href=""><img src="images/footer/jio_money.jpg" alt=""></a>
+                <div class="summary-amount strong">
+                    <div>Amount Payable</div>
+                    <div id="amount-payable">Rs. 950</div>
                 </div>
             </div>
         </div>
-        <div id="secure_payment">
-            <div class="pay_title">
-                <p>Secure Systems</p>
-            </div>
-            <div class="pay_img">
-                <a href="">
-                    <img class="ssl-img" src="images/footer/ssl.png"alt="">
-                </a>
-            </div>
-        </div>
+
+        <!--------------------- LEFT ENDS ------------------->
     </div>
-</footer>
-<script src="js/payment.js"></script>
+    <footer>
+        <div><img style="min-width:1263px; width: 100%;" src="images/stripe/above-footer.png" alt=""></div>
+        <div id="payment">
+            <div id="payment_method">
+                <div class="pay_title">
+                    <p>Payment Methods</p>
+                </div>
+                <div class="pay_logo">
+                    <div class="pay_img">
+                        <a href=""><img src="images/footer/net_banking.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/footer/visa.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/footer/master_card.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/footer/cash_on_delivery.jpg" alt=""></a>
+                    </div>
+                    <div class="pay_img">
+                        <a href=""><img src="images/footer/jio_money.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div id="secure_payment">
+                <div class="pay_title">
+                    <p>Secure Systems</p>
+                </div>
+                <div class="pay_img">
+                    <a href="">
+                        <img class="ssl-img" src="images/footer/ssl.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/payment.js"></script>
 </body>
+
 </html>

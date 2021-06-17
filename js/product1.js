@@ -54,50 +54,22 @@ function hideMenu(id) {
 }
 
 
-//Sign-in functionality
+let cart_items = [];
 
-function close1() {
-    let pop = document.getElementById('sign-in');
-    pop.style.display = "none";
-
+if (localStorage.getItem('cart-items') == undefined) {
+    localStorage.setItem('cart-items', JSON.stringify(cart_items));
 }
 
-function open1() {
-    let pop = document.getElementById('sign-in');
-    let blur = document.getElementById('container');
-
-    pop.style.display = "inline";
-
-    
-}
-
-//Product object ----------->
-
-// let product = {
-//     image1: "images/procuct_1_images/slider_image1",
-//     image2: "images/procuct_1_images/slider_image2",
-//     image3: "images/procuct_1_images/slider_image3",
-//     image4: "images/procuct_1_images/slider_image4",
-//     image5: "images/procuct_1_images/slider_image5",
-//     name: "RAY BAN",
-//     detail: "0RB3671186/3160 UV-Protected Full-Rim Shield Sunglasses",
-//     price: "Rs. 950",
-//     price1: 950
-// };
-
-// localStorage.setItem('current-product', JSON.stringify(product));
 
 
-
-// console.log(data);
+/////////////////////////////////////////////////////////////////////
 
 function show_item() {
-    // let data = JSON.parse(localStorage.getItem('current-product'));
-
+   
     let product = JSON.parse(localStorage.getItem('products'));
     
     let data = product[product.length - 1];
-    console.log(data)
+    
     
     let add_to_bag = document.getElementsByClassName('add_to_bag');
     add_to_bag[0].setAttribute('id', `p${product.length - 1}`);
@@ -126,15 +98,28 @@ function show_item() {
     name[0].innerHTML = `${data.company_name}`;
     detail[0].innerHTML = `${data.description}`
     price[0].innerHTML = `Rs. ${data.price}`
+
+
+    if (check_cart(data)) {
+
+        let go_to_cart = document.getElementById('go_to_bag');
+        let add_to_cart = document.getElementsByClassName('add_to_bag');
+
+        add_to_cart[0].style.display = "none";
+
+        go_to_cart.style.display = "flex";
+        
+    }
+
 }
 
 show_item();
 
-let cart_items = [];
+//////////////////////////////////////////////////////////////
 
-if (localStorage.getItem('cart-items') == undefined) {
-    localStorage.setItem('cart-items', JSON.stringify(cart_items));
-}
+
+
+///////////////////////////////////////////////////////////////
 
 function add_to_cart(id) {
     let newInput = id.split("");
@@ -149,22 +134,43 @@ function add_to_cart(id) {
 
     let cart = JSON.parse(localStorage.getItem('cart-items'));
 
-    // let isPresent = false;
+    
+        cart.push(data[index]);
 
     
-    cart.push(data[index]);
+        localStorage.setItem('cart-items', JSON.stringify(cart));
 
-    // console.log(index);
+        add_to_cart[0].style.display = "none";
+
+        go_to_cart.style.display = "flex";
     
-    localStorage.setItem('cart-items', JSON.stringify(cart));
-
-    add_to_cart[0].style.display = "none";
-
-    go_to_cart.style.display = "flex";
 
 }
+
+///////////////////////////////////////////////////////////////
 
 function go_to_cart() {
     window.open("cart.html");
 }
+
+//////////////////////////////////////////////////////////////
+
+//To check if the object is already in the cart or not start
+
+function check_cart(data) {
+    let isPresent = false;
+    let cart = JSON.parse(localStorage.getItem('cart-items'));
+
+    for (let i = 0; i < cart.length; i++){
+        if (cart[i].company_name == data.company_name && cart[i].description == data.description) {
+            isPresent = true;
+            break;
+        }
+    }
+
+    return isPresent;
+}
+
+//To check if the object is already in the cart or not ends
+
 
