@@ -95,11 +95,12 @@ function bill_show() {
 
   let total = 0
 
+  console.log(data)
   for (let i = 0; i < data.length; i++){
     total += Number(data[i].price)*data[i].quantity;
+    console.log(data[i].price,data[i].quantity)
+    console.log(total)
   }
-
-  console.log(total);
 
   let del = "FREE";
 
@@ -228,11 +229,11 @@ function decrease_quantity() {
 
 //Quantity and size update ends ---->
 
-//Go to shipping page starts
+// //Go to shipping page starts
 
-  function go_to_shipping() {
-        window.open('cart_details.html');
-    }
+//   function go_to_shipping() {
+//         window.open('cart_details.html');
+//     }
 
-//Go to shipping page ends
+// //Go to shipping page ends
 

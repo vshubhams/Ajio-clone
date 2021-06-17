@@ -17,7 +17,24 @@ function showMethod(box,method){
  paymentBox.classList.add('selected-box') 
 }
 
-function placeOrder(){
+function placeOrder(a){
+    let cardNumbr = document.getElementById('cardNumber').value
+    let name =document.getElementById('holderName').value
+    let cvv = document.getElementById('cvv').value
+    let payWarning = document.getElementById('payWarning');
+    let upiWarning = document.getElementById('upiWarning');
+    let upiInput= document.getElementById('upiInput').value
+    payWarning.innerHTML=null
+    upiWarning.innerHTML=null
+    if(a=='card'){
+        if(cardNumbr.length!=16||name==''||cvv==''){
+            payWarning.innerHTML='Enter valid details.'
+            return
+        }
+    }else if(a=='upi'&&upiInput==''){
+       upiWarning.innerHTML='Enter your UPI Id'
+       return
+    }
     setTimeout(function(){
         window.location.href='order.html'
     },2000)

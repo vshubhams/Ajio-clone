@@ -666,3 +666,13 @@ label > input[type="radio"]:checked + *::before {
   );
   border-color: #b09975;
 }
+#payWarning{
+  color: red;
+  font-size: 12px;
+  margin: 0;
+}
+#upiWarning{
+  color: red;
+  font-size: 12px;
+  margin: 0;
+}
