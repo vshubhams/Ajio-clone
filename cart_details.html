@@ -127,36 +127,28 @@
             <h3>Add new address</h3>
             <form>
                 <div class="inputbox">
-                    <input id="input1" type="text" autocomplete="off" required>
-                    <label>Name*</label>
+                    <input id="input1" type="text" autocomplete="no" placeholder="Name*">
                 </div>
                 <div class="inputbox">
-                    <input id="input2" type="text" autocomplete="off" required>
-                    <label>Mobile*</label>
+                    <input id="input2" type="number" placeholder="Mobile*">
                 </div>
                 <div class="inputbox">
-                    <input id="input3" type="text" autocomplete="off" required>
-                    <label>Pincode*</label>
+                    <input id="input3" type="text" placeholder="Pincode*">
                 </div>
                 <div class="inputbox">
-                    <input id="input4" type="text" autocomplete="off" required>
-                    <label>Locality / Area / Street*</label>
+                    <input id="input4" type="text" placeholder="Locality / Area / Street*">
                 </div>
                 <div class="inputbox">
-                    <input id="input5" type="text" autocomplete="off" required>
-                    <label>Flat Number / Building Name*</label>
+                    <input id="input5" type="text" placeholder="Flat Number / Building Name*">
                 </div>
                 <div class="inputbox">
-                    <input id="input6" type="text" autocomplete="off" required>
-                    <label>Landmark</label>
+                    <input id="input6" type="text" placeholder="Landmark">
                 </div>
                 <div class="inputbox">
-                    <input id="input7" type="text" autocomplete="off" required>
-                    <label>District / City*</label>
+                    <input id="input7" type="text" placeholder="District / City*">
                 </div>
                 <div class="inputbox">
-                    <input id="input8" type="text" autocomplete="off" required>
-                    <label>State*</label>
+                    <input id="input8" type="text" placeholder="State*">
                 </div>
                 <div>
                     <h4>Address Type</h4>
@@ -171,35 +163,35 @@
                 </div>
             </form>
             <div>
-                <button id="button">Submit</button>
+                <button id="button">Add</button>
                 <button onclick="closePage()">Save</button>
             </div>
         </div>
     </div>
 
     <!-- Address add/update pop up ends -->
+    <footer>
+        <div class="bottom-bar">
+            <div class="bottom-bar-info">
+                <img src="images/cart_images/secure-payment.png" alt="">
+                <div>SECURE PAYMENTS</div>
+            </div>
+            <div class="bottom-bar-info">
+                <img src="images/cart_images/rupee.png" alt="">
+                <div>CASH ON DELIVERY</div>
+            </div>
+            <div class="bottom-bar-info">
+                <img src="images/cart_images/quality.png" alt="">
+                <div>ASSURED QUALITY</div>
+            </div>
+            <div class="bottom-bar-info">
+                <img src="images/cart_images/return.png" alt="">
+                <div>EASY RETURNS</div>
+            </div>
+        </div>
+    </footer>
 </body>
 
-<footer>
-    <div class="bottom-bar">
-        <div class="bottom-bar-info">
-            <img src="images/cart_images/secure-payment.png" alt="">
-            <div>SECURE PAYMENTS</div>
-        </div>
-        <div class="bottom-bar-info">
-            <img src="images/cart_images/rupee.png" alt="">
-            <div>CASH ON DELIVERY</div>
-        </div>
-        <div class="bottom-bar-info">
-            <img src="images/cart_images/quality.png" alt="">
-            <div>ASSURED QUALITY</div>
-        </div>
-        <div class="bottom-bar-info">
-            <img src="images/cart_images/return.png" alt="">
-            <div>EASY RETURNS</div>
-        </div>
-    </div>
-</footer>
 
 </html>
 <script>
@@ -231,11 +223,11 @@
         div.setAttribute('class', 'address_grid')
         div.innerHTML =
             `<h4>${name}</h4>
-            <p>${locality}, ${flat},</p>
-            <p>${landmark},</p>
+            <p>${flat}, ${landmark},</p>
+            <p>${locality},</p>
             <p>${city}, ${state},</p>
             <p>India - ${pincode}</p>
-            <h5>Phone : ${state}</h5>`
+            <h5>Phone : ${mobile}</h5>`
 
         if (id <= 6) {
             new_address.appendChild(div)
@@ -245,7 +237,13 @@
     button.addEventListener('click', taking_input)
 
     function goToPayment() {
-        window.location.href = 'payment.html'
+        let loginUser = JSON.parse(localStorage.getItem('status'));
+        if(loginUser[0].login==true){
+            window.location.href = 'payment.html'
+        }
+        else{
+            showBox()
+        }
     }
 
     function final_bill() {
