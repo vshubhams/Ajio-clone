@@ -31,7 +31,7 @@ function cart_items_display() {
 
   
       div.innerHTML = `<img src="${data[i].poster}" alt="">
-                    <a href="">${data[i].description}</a>
+                    <a href=""><strong>${data[i].company_name}</strong> ${data[i].description}</a>
                     <div class="product-size">Size <span>M</span> &or;</div>
                     <div class="cart-qty" id="c${i}" onclick="show_update_pop(this.id)">Qty <span> ${data[i].quantity}</span> &or;</div>
                     <div class="delete" id="${i}" onclick="delete_item(this.id)">Delete</div>
@@ -116,16 +116,20 @@ function bill_show() {
     total_amount = total;
   }
 
-  bag_amount.innerHTML = `Rs. ${total}`;
+  bag_amount.innerHTML = `₹ ${total}`;
 
   if (del != "FREE") {
-    bag_del_amount.innerHTML = `Rs. ${del}`;
+    bag_del_amount.innerHTML = `₹ ${del}`;
   }
   else {
     bag_del_amount.innerHTML = `${del}`;
   }
   
-  bag_total_amount.innerHTML = `Rs. ${total_amount}`;
+  bag_total_amount.innerHTML = `₹ ${total_amount}`;
+
+  let value = [total, del, total_amount];
+
+  localStorage.setItem('bill', JSON.stringify(value));
   
 }
 
@@ -223,4 +227,12 @@ function decrease_quantity() {
 }
 
 //Quantity and size update ends ---->
+
+//Go to shipping page starts
+
+  function go_to_shipping() {
+        window.open('cart_details.html');
+    }
+
+//Go to shipping page ends
 
