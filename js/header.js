@@ -223,17 +223,17 @@ function serching(){
 
     const men_items = [
       {
-        company_name: 'Shubham ROADSTER',
+        company_name: 'ROADSTER',
         description: 'Graphic Regular Fit Crew- Neck T-shirt',
         price: '330',
         original_price: 'Rs. 1,099',
         discount: '(70% off)',
         quantity: 1,
-        poster: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1376577/2016/9/15/11473928353466-Roadster-Men-Black-Regular-Fit-Checked-Casual-Shirt-4501473928353310-1.jpg',
-        poster2: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1376577/2016/9/15/11473928353440-Roadster-Men-Black-Regular-Fit-Checked-Casual-Shirt-4501473928353310-2.jpg',
-        poster3: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1376577/2016/9/15/11473928353416-Roadster-Men-Black-Regular-Fit-Checked-Casual-Shirt-4501473928353310-3.jpg',
-        poster4: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1376577/2016/9/15/11473928353388-Roadster-Men-Black-Regular-Fit-Checked-Casual-Shirt-4501473928353310-4.jpg',
-        poster5: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/1376577/2016/9/15/11473928353356-Roadster-Men-Black-Regular-Fit-Checked-Casual-Shirt-4501473928353310-5.jpg'
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210428/iTgD/60897ebaf997dd7b64c785eb/dennislingo_premium_attire_pink_full_sleeves_slim_fit_classic_shirt.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210428/iTgD/60897ebaf997dd7b64c785eb/dennislingo_premium_attire_pink_full_sleeves_slim_fit_classic_shirt.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210428/iTgD/60897ebaf997dd7b64c785eb/dennislingo_premium_attire_pink_full_sleeves_slim_fit_classic_shirt.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210428/iTgD/60897ebaf997dd7b64c785eb/dennislingo_premium_attire_pink_full_sleeves_slim_fit_classic_shirt.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210428/iTgD/60897ebaf997dd7b64c785eb/dennislingo_premium_attire_pink_full_sleeves_slim_fit_classic_shirt.jpg"
       },
   
       {
@@ -250,6 +250,45 @@ function serching(){
         poster5: 'https://assets.ajio.com/medias/sys_master/root/hd4/h47/14876632547358/-473Wx593H-441038483-black-MODEL4.jpg'
       },
       {
+        company_name: "Indie Picks",
+        description: "Cotton Dobby Short Kurta",
+        price: "559",
+        orginal_price: "Rs. 1,299",
+        discount: "(57% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20201112/w6e5/5fad57c3aeb269d5630c0748/indie_picks_peach_cotton_dobby_short_kurta.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20201112/w6e5/5fad57c3aeb269d5630c0748/indie_picks_peach_cotton_dobby_short_kurta.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20201112/w6e5/5fad57c3aeb269d5630c0748/indie_picks_peach_cotton_dobby_short_kurta.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20201112/w6e5/5fad57c3aeb269d5630c0748/indie_picks_peach_cotton_dobby_short_kurta.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20201112/w6e5/5fad57c3aeb269d5630c0748/indie_picks_peach_cotton_dobby_short_kurta.jpg"
+      },
+      {
+        company_name: "MUJI",
+        description: "Cotton Washed Oxford Stand-Collar Shirt",
+        price: "1990",
+        original_price: "",
+        discount: "",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20201021/ppzA/5f8f31a2f997dd8c836ff14b/muji_blue_cotton_washed_oxford_stand-collar_shirt.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20201021/ppzA/5f8f31a2f997dd8c836ff14b/muji_blue_cotton_washed_oxford_stand-collar_shirt.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20201021/ppzA/5f8f31a2f997dd8c836ff14b/muji_blue_cotton_washed_oxford_stand-collar_shirt.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20201021/ppzA/5f8f31a2f997dd8c836ff14b/muji_blue_cotton_washed_oxford_stand-collar_shirt.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20201021/ppzA/5f8f31a2f997dd8c836ff14b/muji_blue_cotton_washed_oxford_stand-collar_shirt.jpg"
+      },
+      {
+        company_name: "DENNISLINGO PREMIUM ATTIRE",
+        description: "Slim Fit Shirt with Patch Pocket",
+        price: "573",
+        original_price: "Rs. 1,849",
+        discount: "(69% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210403/dd2q/606867587cdb8c1f1475204d/dennislingo_premium_attire_purple_slim_fit_shirt_with_patch_pocket.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210403/dd2q/606867587cdb8c1f1475204d/dennislingo_premium_attire_purple_slim_fit_shirt_with_patch_pocket.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210403/dd2q/606867587cdb8c1f1475204d/dennislingo_premium_attire_purple_slim_fit_shirt_with_patch_pocket.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210403/dd2q/606867587cdb8c1f1475204d/dennislingo_premium_attire_purple_slim_fit_shirt_with_patch_pocket.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210403/dd2q/606867587cdb8c1f1475204d/dennislingo_premium_attire_purple_slim_fit_shirt_with_patch_pocket.jpg"
+      },
+      {
         company_name: 'FRENCH COLLECTION',
         description: 'Columbia Lightly Washed Skinny Fit Jeans',
         price: '1715',
@@ -263,6 +302,71 @@ function serching(){
         poster5: 'https://assets.ajio.com/medias/sys_master/root/20210212/rYyF/6026a890f997dd5c40ef6cf7/-473Wx593H-460827661-ltblue-MODEL4.jpg'
       },
       {
+        company_name: "Calvin Klein Jeans",
+        description: "Slim Fit Shirt with Spread Collar",
+        price: "4249",
+        original_price: "Rs. 4,999",
+        discount: "(15% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210525/J4i5/60ac3947f997ddb312a871e6/calvin_klein_jeans_grey_slim_fit_shirt_with_spread_collar.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210525/J4i5/60ac3947f997ddb312a871e6/calvin_klein_jeans_grey_slim_fit_shirt_with_spread_collar.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210525/J4i5/60ac3947f997ddb312a871e6/calvin_klein_jeans_grey_slim_fit_shirt_with_spread_collar.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210525/J4i5/60ac3947f997ddb312a871e6/calvin_klein_jeans_grey_slim_fit_shirt_with_spread_collar.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210525/J4i5/60ac3947f997ddb312a871e6/calvin_klein_jeans_grey_slim_fit_shirt_with_spread_collar.jpg"
+      },
+      {
+        company_name: "MUJI",
+        description: "Cotton Washed Oxford Stand-Collar Shirt",
+        price: "1990",
+        original_price: "",
+        discount: "",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20201021/ppzA/5f8f31a2f997dd8c836ff14b/muji_blue_cotton_washed_oxford_stand-collar_shirt.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20201021/ppzA/5f8f31a2f997dd8c836ff14b/muji_blue_cotton_washed_oxford_stand-collar_shirt.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20201021/ppzA/5f8f31a2f997dd8c836ff14b/muji_blue_cotton_washed_oxford_stand-collar_shirt.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20201021/ppzA/5f8f31a2f997dd8c836ff14b/muji_blue_cotton_washed_oxford_stand-collar_shirt.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20201021/ppzA/5f8f31a2f997dd8c836ff14b/muji_blue_cotton_washed_oxford_stand-collar_shirt.jpg"
+      },
+      {
+        company_name: "DENNISLINGO PREMIUM ATTIRE",
+        description: "Slim Fit Shirt with Patch Pocket",
+        price: "573",
+        original_price: "Rs. 1,849",
+        discount: "(69% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210403/dd2q/606867587cdb8c1f1475204d/dennislingo_premium_attire_purple_slim_fit_shirt_with_patch_pocket.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210403/dd2q/606867587cdb8c1f1475204d/dennislingo_premium_attire_purple_slim_fit_shirt_with_patch_pocket.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210403/dd2q/606867587cdb8c1f1475204d/dennislingo_premium_attire_purple_slim_fit_shirt_with_patch_pocket.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210403/dd2q/606867587cdb8c1f1475204d/dennislingo_premium_attire_purple_slim_fit_shirt_with_patch_pocket.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210403/dd2q/606867587cdb8c1f1475204d/dennislingo_premium_attire_purple_slim_fit_shirt_with_patch_pocket.jpg"
+      },
+      {
+        company_name: "DENNISLINGO PREMIUM ATTIRE",
+        description: "Band Collar Slim Fit Shirt",
+        price: "573",
+        original_price: "Rs. 1,849",
+        discount: "(69% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210403/ORxf/60691fd6aeb269a9e33ea526/dennislingo_premium_attire_purple_band_collar_slim_fit_shirt.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210403/ORxf/60691fd6aeb269a9e33ea526/dennislingo_premium_attire_purple_band_collar_slim_fit_shirt.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210403/ORxf/60691fd6aeb269a9e33ea526/dennislingo_premium_attire_purple_band_collar_slim_fit_shirt.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210403/ORxf/60691fd6aeb269a9e33ea526/dennislingo_premium_attire_purple_band_collar_slim_fit_shirt.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210403/ORxf/60691fd6aeb269a9e33ea526/dennislingo_premium_attire_purple_band_collar_slim_fit_shirt.jpg"
+      },
+      {
+        company_name: "Bene Kleed",
+        description: "Floral Print Slim Fit Shirt with Patch Pocket",
+        price: "630",
+        original_price: "Rs. 2,099",
+        discount: "(70% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210403/AU4p/60686d0d7cdb8c1f14758483/bene_kleed_beige_floral_print_slim_fit_shirt_with_patch_pocket.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210403/AU4p/60686d0d7cdb8c1f14758483/bene_kleed_beige_floral_print_slim_fit_shirt_with_patch_pocket.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210403/AU4p/60686d0d7cdb8c1f14758483/bene_kleed_beige_floral_print_slim_fit_shirt_with_patch_pocket.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210403/AU4p/60686d0d7cdb8c1f14758483/bene_kleed_beige_floral_print_slim_fit_shirt_with_patch_pocket.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210403/AU4p/60686d0d7cdb8c1f14758483/bene_kleed_beige_floral_print_slim_fit_shirt_with_patch_pocket.jpg"
+      },
+      {
         company_name: 'IVOC',
         description: 'Mid-Rise Jogger Jeans with Zip Pocket',
         price: '792',
@@ -274,6 +378,19 @@ function serching(){
         poster3: 'https://assets.ajio.com/medias/sys_master/root/20210403/ntpG/606864cb7cdb8c1f1474f297/-473Wx593H-461094398-blue-MODEL6.jpg',
         poster4: 'https://assets.ajio.com/medias/sys_master/root/20210403/ntpG/606864cb7cdb8c1f1474f297/-473Wx593H-461094398-blue-MODEL6.jpg',
         poster5: 'https://assets.ajio.com/medias/sys_master/root/20210403/ntpG/606864cb7cdb8c1f1474f297/-473Wx593H-461094398-blue-MODEL6.jpg'
+      },
+      {
+        company_name: "Indie Picks",
+        description: "Mandarin-Collar South-Cotton Kurta",
+        price: "1400",
+        orginal_price: "Rs. 3,499",
+        discount: "(60% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20200918/FRiX/5f63c2cff997dd8c8341f4ab/indie_picks_orange_mandarin-collar_south-cotton_kurta.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20200918/FRiX/5f63c2cff997dd8c8341f4ab/indie_picks_orange_mandarin-collar_south-cotton_kurta.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20200918/FRiX/5f63c2cff997dd8c8341f4ab/indie_picks_orange_mandarin-collar_south-cotton_kurta.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20200918/FRiX/5f63c2cff997dd8c8341f4ab/indie_picks_orange_mandarin-collar_south-cotton_kurta.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20200918/FRiX/5f63c2cff997dd8c8341f4ab/indie_picks_orange_mandarin-collar_south-cotton_kurta.jpg"
       },
       {
         company_name: 'DENNISLINGO PREMIUM ATTIRE',
@@ -300,6 +417,32 @@ function serching(){
         poster3: 'https://assets.ajio.com/medias/sys_master/root/20210420/opz8/607ecd0df997dd7b64b802f5/-473Wx593H-462323964-white-MODEL7.jpg',
         poster4: 'https://assets.ajio.com/medias/sys_master/root/20210420/opz8/607ecd0df997dd7b64b802f5/-473Wx593H-462323964-white-MODEL7.jpg',
         poster5: 'https://assets.ajio.com/medias/sys_master/root/20210420/opz8/607ecd0df997dd7b64b802f5/-473Wx593H-462323964-white-MODEL7.jpg'
+      },
+      {
+        company_name: "NETPLAY",
+        description: "Slim Fit Shirt with Patch Pocket",
+        price: "490",
+        original_price: "Rs. 999",
+        discount: "(51% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/had/hee/15130607321118/netplay_yellow_slim_fit_shirt_with_patch_pocket.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/had/hee/15130607321118/netplay_yellow_slim_fit_shirt_with_patch_pocket.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/had/hee/15130607321118/netplay_yellow_slim_fit_shirt_with_patch_pocket.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/had/hee/15130607321118/netplay_yellow_slim_fit_shirt_with_patch_pocket.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/had/hee/15130607321118/netplay_yellow_slim_fit_shirt_with_patch_pocket.jpg"
+      },
+      {
+        company_name: "GLITO",
+        description: "Colourblock Slim Fit Shirt",
+        price: "420",
+        original_price: "Rs. 1,199",
+        discount: "(65% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210403/8mWH/60688ecaaeb269a9e3346e03/glito_white_colourblock_slim_fit_shirt.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210403/8mWH/60688ecaaeb269a9e3346e03/glito_white_colourblock_slim_fit_shirt.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210403/8mWH/60688ecaaeb269a9e3346e03/glito_white_colourblock_slim_fit_shirt.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210403/8mWH/60688ecaaeb269a9e3346e03/glito_white_colourblock_slim_fit_shirt.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210403/8mWH/60688ecaaeb269a9e3346e03/glito_white_colourblock_slim_fit_shirt.jpg"
       },
       {
         company_name: 'THE INDIAN GARAGE CO',
@@ -410,6 +553,58 @@ function serching(){
   
       },
       {
+        company_name: "Teamspirit",
+        description: "Printed Hooded Dress with Side Pockets",
+        price: "490",
+        orginal_price: "Rs. 999",
+        discount: "(51% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210112/gwZl/5ffca9e77cdb8c1f1425e831/teamspirit_pink_printed_hooded_dress_with_side_pockets.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210112/gwZl/5ffca9e77cdb8c1f1425e831/teamspirit_pink_printed_hooded_dress_with_side_pockets.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210112/gwZl/5ffca9e77cdb8c1f1425e831/teamspirit_pink_printed_hooded_dress_with_side_pockets.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210112/gwZl/5ffca9e77cdb8c1f1425e831/teamspirit_pink_printed_hooded_dress_with_side_pockets.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210112/gwZl/5ffca9e77cdb8c1f1425e831/teamspirit_pink_printed_hooded_dress_with_side_pockets.jpg"
+      },
+      {
+        company_name: "RIO",
+        description: "Striped Fit & Flare Dress with Lettuce Hems",
+        price: "479",
+        orginal_price: "Rs. 799",
+        discount: "(40% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210316/ewNu/604fbcaaf997dd5c40118bc6/rio_pink_striped_fit_&_flare_dress_with_lettuce_hems.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210316/ewNu/604fbcaaf997dd5c40118bc6/rio_pink_striped_fit_&_flare_dress_with_lettuce_hems.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210316/ewNu/604fbcaaf997dd5c40118bc6/rio_pink_striped_fit_&_flare_dress_with_lettuce_hems.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210316/ewNu/604fbcaaf997dd5c40118bc6/rio_pink_striped_fit_&_flare_dress_with_lettuce_hems.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210316/ewNu/604fbcaaf997dd5c40118bc6/rio_pink_striped_fit_&_flare_dress_with_lettuce_hems.jpg"
+      },
+      {
+        company_name: "FUSION",
+        description: "Floral Print Straight Kurti",
+        price: "245",
+        orginal_price: "Rs. 499",
+        discount: "(51% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/haf/h2e/14491337424926/fusion_coral_red_floral_print_straight_kurti.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/haf/h2e/14491337424926/fusion_coral_red_floral_print_straight_kurti.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/haf/h2e/14491337424926/fusion_coral_red_floral_print_straight_kurti.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/haf/h2e/14491337424926/fusion_coral_red_floral_print_straight_kurti.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/haf/h2e/14491337424926/fusion_coral_red_floral_print_straight_kurti.jpg"
+      },
+      {
+        company_name: "OM SAI LATEST CREATION",
+        description: "Block Print Straight Kurti",
+        price: "524",
+        orginal_price: "Rs. 699",
+        discount: "(25% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210403/kKA1/6068a6acaeb269a9e3363363/om_sai_latest_creation_pink_block_print_straight_kurti.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210403/kKA1/6068a6acaeb269a9e3363363/om_sai_latest_creation_pink_block_print_straight_kurti.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210403/kKA1/6068a6acaeb269a9e3363363/om_sai_latest_creation_pink_block_print_straight_kurti.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210403/kKA1/6068a6acaeb269a9e3363363/om_sai_latest_creation_pink_block_print_straight_kurti.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210403/kKA1/6068a6acaeb269a9e3363363/om_sai_latest_creation_pink_block_print_straight_kurti.jpg"
+      },
+      {
         company_name: "FOUR SEASONS",
         description: "Traditional Saree with Zari Border",
         price: '699',
@@ -436,6 +631,58 @@ function serching(){
         poster4: 'https://assets.ajio.com/medias/sys_master/root/h4b/h30/15785539338270/dnmx_blue_lightly_washed_mid-rise_jeans.jpg',
         poster5: 'https://assets.ajio.com/medias/sys_master/root/h4b/h30/15785539338270/dnmx_blue_lightly_washed_mid-rise_jeans.jpg'
   
+      },
+      {
+        company_name: "OM SAI LATEST CREATION",
+        description: "Block Print A-line Kurti",
+        price: "538",
+        orginal_price: "Rs. 699",
+        discount: "(23% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210403/JTla/6068993b7cdb8c1f1478a3e1/om_sai_latest_creation_yellow_block_print_a-line_kurti.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210403/JTla/6068993b7cdb8c1f1478a3e1/om_sai_latest_creation_yellow_block_print_a-line_kurti.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210403/JTla/6068993b7cdb8c1f1478a3e1/om_sai_latest_creation_yellow_block_print_a-line_kurti.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210403/JTla/6068993b7cdb8c1f1478a3e1/om_sai_latest_creation_yellow_block_print_a-line_kurti.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210403/JTla/6068993b7cdb8c1f1478a3e1/om_sai_latest_creation_yellow_block_print_a-line_kurti.jpg"
+      },
+      {
+        company_name: "FOUR SEASONS",
+        description: "Traditional Saree with Zari Border",
+        price: "629",
+        original_price: "Rs. 1099",
+        discount: "(60% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20201110/bQIa/5fa9f699aeb269d563066722/manjula_sarees_blue_traditional_saree_with_contrast_zari_border.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20201110/bQIa/5fa9f699aeb269d563066722/manjula_sarees_blue_traditional_saree_with_contrast_zari_border.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20201110/bQIa/5fa9f699aeb269d563066722/manjula_sarees_blue_traditional_saree_with_contrast_zari_border.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20201110/bQIa/5fa9f699aeb269d563066722/manjula_sarees_blue_traditional_saree_with_contrast_zari_border.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20201110/bQIa/5fa9f699aeb269d563066722/manjula_sarees_blue_traditional_saree_with_contrast_zari_border.jpg"
+      },
+      {
+        company_name: "SATRANI",
+        description: "Traditional Saree with Zari Border",
+        price: "2544",
+        original_price: "Rs. 1119",
+        discount: "(60% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210304/QsWQ/60402333f997dd5c400369bb/saree_mall_brown_silk_blend_saree_with_embellished_border.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210304/QsWQ/60402333f997dd5c400369bb/saree_mall_brown_silk_blend_saree_with_embellished_border.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210304/QsWQ/60402333f997dd5c400369bb/saree_mall_brown_silk_blend_saree_with_embellished_border.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210304/QsWQ/60402333f997dd5c400369bb/saree_mall_brown_silk_blend_saree_with_embellished_border.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210304/QsWQ/60402333f997dd5c400369bb/saree_mall_brown_silk_blend_saree_with_embellished_border.jpg"
+      },
+      {
+        company_name: "ANAITA",
+        description: "Embroidered Straight Kurti",
+        price: "492",
+        orginal_price: "Rs. 1,229",
+        discount: "(60% off)",
+        quantity: 1,
+        poster: "https://assets.ajio.com/medias/sys_master/root/20210423/DLEQ/6082bdf1aeb269a9e39c61a3/anaita_green_embroidered_straight_kurti.jpg",
+        poster2: "https://assets.ajio.com/medias/sys_master/root/20210423/DLEQ/6082bdf1aeb269a9e39c61a3/anaita_green_embroidered_straight_kurti.jpg",
+        poster3: "https://assets.ajio.com/medias/sys_master/root/20210423/DLEQ/6082bdf1aeb269a9e39c61a3/anaita_green_embroidered_straight_kurti.jpg",
+        poster4: "https://assets.ajio.com/medias/sys_master/root/20210423/DLEQ/6082bdf1aeb269a9e39c61a3/anaita_green_embroidered_straight_kurti.jpg",
+        poster5: "https://assets.ajio.com/medias/sys_master/root/20210423/DLEQ/6082bdf1aeb269a9e39c61a3/anaita_green_embroidered_straight_kurti.jpg"
       },
       {
         company_name: "APNISHA",
