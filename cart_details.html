@@ -30,7 +30,7 @@
                 </ul>
             </div>
             <div class="logo-box">
-                <a href="#">
+                <a href="index.html">
                     <img class="logo-img" src="images/Ajio-Logo.svg" alt="">
                 </a>
             </div>
@@ -172,7 +172,7 @@
             </form>
             <div>
                 <button id="button">Submit</button>
-                <button>Save</button>
+                <button onclick="closePage()">Save</button>
             </div>
         </div>
     </div>
@@ -207,9 +207,11 @@
         document.querySelector('.change_address').style.display = 'flex'
     })
 
-    document.querySelector('#close').addEventListener('click', function () {
+    let close = document.getElementById('close');
+    close.addEventListener('click',closePage);
+    function closePage(){
         document.querySelector('.change_address').style.display = 'none'
-    })
+    }
 
     var button = document.getElementById('button')
     var new_address = document.getElementById('new_address')

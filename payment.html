@@ -99,10 +99,11 @@
 
                 <div id="credit" class="payment-box-2 credit selected-box">
                     <div class="pay-head">Add New Card</div>
+                    <p id="payWarning"></p>
                     <div class="pay-sub-head">Card Number</div>
-                    <div> <input class="payment-box-input" type=""></div>
+                    <div> <input class="payment-box-input" id="cardNumber" type=""></div>
                     <div class="pay-sub-head">Name on Card</div>
-                    <div><input class="payment-box-input" type="text"></div>
+                    <div><input class="payment-box-input" id="holderName" type="text"></div>
                     <div>
                         <div class="pay-sub-head">Expiration Date</div>
                         <div class="pay-sub-head">CVV <span>(What's This?)</span></div>
@@ -140,14 +141,14 @@
                             </select></div>
 
                         <div>
-                            <input type="text">
+                            <input id="cvv" type="text">
                         </div>
                     </div>
 
-                    <div class="credit-checkbox-input"> <input type="checkbox" value="true" checked="">Save this UPI ID
+                    <div class="credit-checkbox-input"> <input type="checkbox" value="true" checked="">Save these details
                         for faster checkout</div>
 
-                    <div> <button onclick="placeOrder()" class="btn-payment">PAY SECURELY</button></div>
+                    <div> <button onclick="placeOrder('card')" class="btn-payment">PAY SECURELY</button></div>
                     <div class="pay-head-bottom">By placing this order, you agree to AJIO's T&C</div>
 
                 </div>
@@ -214,12 +215,13 @@
                     <div class="pay-sub-head">Pay instantly from your bank using your UPI ID.<span
                             class="view-expansion">How to find UPI ID?</span></div>
 
-                    <div> <input class="payment-box-input" type="text" placeholder="12345670@upi"></div>
+                            <div> <input class="payment-box-input" id="upiInput" type="text" placeholder="12345670@upi"></div>
+                            <p id="upiWarning"></p>
 
                     <div class="credit-checkbox-input"> <input type="checkbox" value="true" checked="">Save this UPI ID
                         for faster checkout</div>
 
-                    <div><button onclick="placeOrder()" class="btn-payment">PAY SECURELY</button></div>
+                    <div><button onclick="placeOrder('upi')" class="btn-payment">PAY SECURELY</button></div>
 
                     <div class="pay-head-bottom"> By placing this order, you agree to AJIO's T&C</div>
                 </div>

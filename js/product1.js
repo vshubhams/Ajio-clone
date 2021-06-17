@@ -123,7 +123,8 @@ show_item();
 
 function add_to_cart(id) {
     let newInput = id.split("");
-    let index = Number(newInput[1]);
+    newInput = newInput.splice(1).join("")
+    let index = Number(newInput);
 
     let go_to_cart = document.getElementById('go_to_bag');
     let add_to_cart = document.getElementsByClassName('add_to_bag');

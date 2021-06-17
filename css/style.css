@@ -592,7 +592,7 @@ footer {
 .sign-in-container{
   display: none;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   z-index: 120;
   width: 100%;
   height: 100%;
