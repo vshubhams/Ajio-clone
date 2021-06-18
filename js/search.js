@@ -60,7 +60,7 @@ function short() {
         appendproducts(product_details)
     } else {
         var data = JSON.parse(localStorage.getItem('product_details'))
-        appendproducs(data)
+        appendproducts(data)
     }
 }
 
