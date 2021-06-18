@@ -5,8 +5,8 @@ We have created the clone of Ajio.com with all it's main functions like- login &
 ### Team members:-
 Aaditya Kumar(nj2_003),  Shubham(nj2_118),  Pallav jain(nj2_151)
 ### Technologies used:
-**HTML CSS JavaScript**
+**HTML, CSS, JavaScript**
 ### Pages Designed:
-Landing page, All product page ,Product details page, Cart page, Cart Detail page, Payment page, Order Complete page
+Landing page, All product page, Product details page, Cart page, Cart Detail page, Payment page, Order Complete page and Search Feature
 #### Tech library used:
 No external library is used in this project.
