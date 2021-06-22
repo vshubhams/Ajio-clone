@@ -287,6 +287,9 @@ width: 300px;
   min-width: 1263px;
   top: 90px;
 }
+.main-container>div img{
+  display: block;
+}
 
 /* slider start -------------------*/
 .slidershow{
