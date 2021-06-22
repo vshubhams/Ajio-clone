@@ -109,6 +109,7 @@ function goToSignUP(){
     let warning =document.getElementById('warning');
     if(i==0){
         if(number.length<10){
+            warning.style.color='red';
             warning.innerHTML='Please enter valid Mobile Number.'
             return
         }
@@ -134,6 +135,7 @@ function goToSignUP(){
     if(i==1){
         warning.innerHTML=null
         if(number.length<10||name==''||email==''||password==''){
+            warning.style.color='red'
             warning.innerHTML='Please enter valid details.'
             return
         }
@@ -144,6 +146,7 @@ function goToSignUP(){
         }
         arr.push(userData);
         localStorage.setItem('users',JSON.stringify(arr));
+        warning.style.color='green'
         warning.innerHTML='SignUp Successfully'
         setTimeout(function(){
             statusTrue(name)
@@ -186,6 +189,7 @@ function login(number){
             if(el.password==password.value&&el.number==number){
                 // username.innerHTML=`Hi ${el.name}`
                 console.log('login')
+                warning.style.color='green'
                 warning.innerHTML='Login Successfully'
                 setTimeout(function(){
                     statusTrue(el.name)
@@ -198,6 +202,7 @@ function login(number){
         })
         if(bool){
             warning.innerHTML=null
+            warning.style.color='red'
             warning.innerHTML='Please enter valid Password.'
             return
         }

@@ -50,7 +50,7 @@ body {
 .image_option > img {
   width: 98%;
   max-height: 98%;
-  vertical-align: middle;
+  vertical-align: bottom;
   cursor: pointer;
 }
 
