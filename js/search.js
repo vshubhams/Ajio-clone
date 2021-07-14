@@ -1,7 +1,12 @@
-
 var box = document.getElementById('product_box')
 
+let title = localStorage.getItem("title");
+let headingTitle = document.getElementById('title');
+headingTitle.innerHTML=title
+document.title= title;
+let productCount=document.getElementById("productCount");
 function appendproducts(data) {
+    productCount.innerHTML=`${data.length} Items Fount`
     // var data = JSON.parse(localStorage.getItem('product_details'))
     box.innerHTML = null
     var id = 0

@@ -605,9 +605,11 @@ footer {
 
 .sign-in-box{
   position: relative;
-  height: 740px;
+  /* height: 740px; */
+  height: max-content;
+  min-height: 510px;
   margin: 28px 0;
-  padding: 0 25px;
+  padding: 0 25px 30px;
   display: flex;
   flex-direction: column;
   background:#FFFFFF ;
