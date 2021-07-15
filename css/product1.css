@@ -255,6 +255,7 @@ body {
   padding: 20px 0px 20px 0px;
   cursor: pointer;
   margin: 30px 0px 0px 0px;
+  visibility: hidden;
 }
 
 .add_to_bag img,
@@ -372,4 +373,3 @@ body {
 .mrp2 {
   font-weight: 550;
 }
-

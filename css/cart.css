@@ -93,9 +93,6 @@ body {
 
 /* Quality popup ends */
 
-
-
-
 #blank {
   height: 100px;
 }
@@ -220,7 +217,7 @@ body {
 
 .delete {
   width: 8%;
-  margin: 140px 20px 0px 20px;
+  margin: 175px 20px 0px 20px;
   color: #176c93;
   cursor: pointer;
 }
@@ -374,8 +371,8 @@ body {
   margin-right: 10px;
 }
 
-.nav>img{
-  width: 100%; 
+.nav > img {
+  width: 100%;
   position: relative;
   top: -14px;
   left: 60px;
