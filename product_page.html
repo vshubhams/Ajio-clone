@@ -764,7 +764,7 @@
                 <div>
                     <h4 id="productCount">...</h4>
                     <div></div>
-                    <p>SHORT BY </p>
+                    <p>SORT BY </p>
                     <select id="select" onchange="short()">
                         <option disabled hidden selected> Popularity</option>
                         <option value="Popularity">Popularity</option>
@@ -1064,7 +1064,7 @@
     var box = document.getElementById('product_box')
     let productCount=document.getElementById("productCount");
     function appendproducts(data) {
-        productCount.innerHTML=`${data.length} Items Fount`
+        productCount.innerHTML=`${data.length} Items Found`
         // var data = JSON.parse(localStorage.getItem('product_details'))
         box.innerHTML = null
         var id = 0
@@ -1135,8 +1135,8 @@
 
     function create1() {
         var div = document.createElement('div')
-        div.innerHTML = `<div><input type="checkbox"> Men (9,211)</div>
-        <div><input type="checkbox"> Women (1)</div>
+        div.innerHTML = `<div><input type="checkbox"> Men (14)</div>
+        <div><input type="checkbox"> Women (0)</div>
         <hr>`
         count1++
         // console.log(count1);
