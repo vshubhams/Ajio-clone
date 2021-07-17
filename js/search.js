@@ -6,7 +6,7 @@ headingTitle.innerHTML=title
 document.title= title;
 let productCount=document.getElementById("productCount");
 function appendproducts(data) {
-    productCount.innerHTML=`${data.length} Items Fount`
+    productCount.innerHTML=`${data.length} Items Found`
     // var data = JSON.parse(localStorage.getItem('product_details'))
     box.innerHTML = null
     var id = 0
