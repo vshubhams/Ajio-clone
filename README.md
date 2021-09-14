@@ -18,3 +18,8 @@ We have created the clone of Ajio.com with all it's main functions like- login &
 Landing page, All product page, Product details page, Cart page, Cart Detail page, Payment page, Order Complete page and Search Feature
 #### Tech library used:
 No external library is used in this project.
+
+#### How to run this project:
+-Clone thi repo or download the source code.
+-Open index.html from the main folder.
+-Everything is done, you can use the website now.
